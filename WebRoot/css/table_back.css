@@ -1,0 +1,117 @@
+@charset "utf-8";
+/*页面表格填充内容定义*/
+.表格表头背景 td{
+	border:0px;
+	background-color:#BFD3FC; 
+	/*#F4F9FD;*/
+}
+/*页面表格填充内容字体颜色定义*/
+.表格表头背景  td {
+	/*color: #041C53;*/
+	color: #000000;
+	font-size: 14px;
+	font-weight: lighter ;
+	font-family: '黑体';	
+}
+.表格表头背景  td div a {
+	/*color: #041C53;*/
+	color: #000000;
+	font-size: 14px;
+	font-weight: lighter ;
+	font-family: '黑体';	
+}
+/*页面表格第一行背景颜色定义*/
+.表格表头背景1 td {
+	background-color: #188ae7;
+	/*;#1778C2; #0055E3*/
+	border: 0px;
+
+}
+.表格表头背景11 td {
+	background-color: #188ae7;
+	/*;#1778C2; #0055E3*/
+	border: 0px;
+	height:10px;
+
+}
+/*页面表格第一行字体定义*/
+.表格表头背景1 td div p {
+	color: #ffffff;
+	font-family: '黑体';	
+}
+/*标题不滚动*/
+.fixedHead { 
+position: relative; 
+top:expression(this.offsetParent.scrollTop-2); 
+}
+.c_ghbs1{
+	background-color:#F0F0F0;
+	font-family:'黑体';	
+	font-size:14px;
+	font-weight:lighter；	
+	}
+.c_ghbs2{
+	background-color:#bfd3fc;
+	font-family:'黑体';	
+	font-size:14px;
+	font-weight:lighter；
+	}
+#ghbs tr:hover{
+  background-color:#A9A9A9;
+  color:MidnightBlue;
+  
+  
+}
+	
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	background-color: #ffffff;
+}
+.ddd {
+	display:inline;
+}
+p {
+	margin: 0px;
+	padding: 0px;
+	}	
+	
+	
+.c_ghbs7{/* 鼠标滑过可变色 原为2*/
+	
+ onmouseover: expression(onmouseover=function ()
+ {  this.style.backgroundColor='#A9A9A9';  });
+ onmouseout: expression(onmouseout=function ()
+ {  this.style.backgroundColor='#bfd3fc';  });
+	
+	background-color:#bfd3fc;
+	font-family:'黑体';	
+	font-size:14px;
+	font-weight:lighter；
+	}
+.c_ghbs8{/* 鼠标滑过可变色 原为1*/
+	
+	
+ onmouseover: expression(onmouseover=function ()
+ {  this.style.backgroundColor='#A9A9A9';
+    
+ 
+     });
+ onmouseout: expression(onmouseout=function ()
+ {  this.style.backgroundColor='#F0F0F0';
+      });
+	
+	background-color:#F0F0F0;
+	font-family:'黑体';	
+	font-size:14px;
+	font-weight:lighter；
+	}
+
+
+
+
+
+
+
+
+

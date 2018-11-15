@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="leave_default" extends="struts-default" >
+		<action name="leave" class="office.leave.action.ShowLeavePage">
+			<result name="success">/page/leave/leave_self.jsp</result>
+			<result name="dai">/page/leave/leave_self_dai.jsp</result>
+		</action>
+		<action name="subleave" class="office.leave.action.SubLeavePage">
+			<result name="success">/page/leave/success.jsp</result>
+			<result name="failed">/page/leave/failed.jsp</result>
+		</action>
+		<action name="viewapply" class="office.leave.action.ViewApply">
+			<result name="success">/page/leave/viewapply.jsp</result>
+			<result name="all">/page/leave/viewall.jsp</result>
+		</action>
+
+		<action name="findzhichushi" class="office.leave.action.Leave_ajax">
+			<result name="success">/page/leave/leave_self_ajax.jsp</result>
+		</action>		
+		<action name="leavedetail" class="office.leave.action.LeaveDetail">
+			<result name="success">/page/leave/leavedetail.jsp</result>
+		</action>
+		<action name="viewundertake" class="office.leave.action.ViewUndertake">
+			<result name="success">/page/leave/viewundertake.jsp</result>
+		</action>
+		<action name="viewycb" class="office.leave.action.ViewYcb">
+			<result name="success">/page/leave/viewycb.jsp</result>
+		</action>
+		<action name="viewundertakedetail" class="office.leave.action.ViewUndertakeDetail">
+			<result name="success">/page/leave/undertakedetail.jsp</result>
+		</action>
+		<action name="shenpileave" class="office.leave.action.ShenpiLeave">
+			<result name="success">/page/leave/successunder.jsp</result>
+		</action>
+		<action name="xiaojiaqueren" class="office.leave.action.XiaojiaQueren">
+			<result name="success">/page/leave/successunder.jsp</result>
+		</action>
+		<action name="viewsummary" class="office.leave.action.ViewSummary">
+			<result name="success">/page/leave/leavesummary.jsp</result>
+			<result name="successtd">/page/leave/leavesummarytd.jsp</result>
+		</action>
+		<action name="updatestatus" class="office.leave.action.UpdateStatus">
+			<result name="successcx">/page/leave/successunder.jsp</result>
+			<result name="successycb">/page/leave/successunder.jsp</result>
+		</action>
+		
+		<action name="deleteleavepage" class="office.leave.action.DeleteLeave">
+			<result name="success">/page/leave/success.jsp</result>
+		</action>
+		<action name="viewall" class="office.leave.action.ViewAll">
+			<result name="success">/page/leave/viewall.jsp</result>
+			<result name="successtd">/page/leave/viewalltd.jsp</result>
+		</action>
+
+		<action name="leave_self_dai" class="office.leave.action.ShowLeavePage_dai" >
+			<result name="success">/page/leave/leave_self_dai_ajax.jsp</result>
+			<result name="failed">/page/leave/faileded.jsp</result>
+			<result name="failededed">/page/leave/failededed.jsp</result>
+		</action>
+		<action name="importleavesummary" class="office.leave.action.ImportLeaveSummary" >
+			<result name="success">/page/public/success.jsp</result>
+		</action>
+		<action name="exportleave" class="office.leave.action.ExportLeaveAll">
+			<result name="success">/page/public/derivedetail.jsp</result>
+		</action>
+		<action name="exportleavesummary" class="office.leave.action.ExportLeaveSummary">
+			<result name="success">/page/public/derivedetail.jsp</result>
+		</action>
+		<action name="sumdate" class="office.util.DateUtil" method="countsumday" >
+			<result name="success">/page/leave/leave_self_ajax.jsp</result>
+		</action>
+		<action name="modifyleavepage" class="office.leave.action.ModifyLeavePage">
+			<result name="success">/page/leave/modifyleavepage.jsp</result>
+		</action>
+		<action name="modifyleave" class="office.leave.action.ModifyLeave">
+			<result name="success">/page/public/success.jsp</result>
+		</action>
+		<action name="test" class="office.util.FileReadAndWrite">
+			<result name="success">/page/public/success.jsp</result>
+		</action>
+	    <action name="showtip" class="office.tempxx.action.ShowTip">
+			<result name="success">/page/leave/istip_ajax.jsp</result>
+		</action>
+		<action name="viewpwall" class="office.tempxx.action.ViewPwAll">
+			<result name="success">/page/leave/showworkdetail.jsp</result>
+		</action>
+		<action name="viewpwunderall" class="office.tempxx.action.ViewPwUnderAll">
+			<result name="success">/page/leave/showworkdetail.jsp</result>
+		</action>
+		<action name="backtoleavepage" class="office.leave.action.BackToLeavePage">
+			<result name="success">/page/leave/leave_dai_tijiao.jsp</result>
+		</action>
+	</package>
+</struts>    

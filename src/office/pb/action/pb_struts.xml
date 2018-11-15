@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="pb_default" extends="struts-default" >
+	 	<action name="getpbconfig" class="office.pb.action.GetPbConfig">
+			<result name="success">/page/pb/pbconfig.jsp</result>
+		</action> 
+		<action name="scpbtoadd" class="office.pb.action.ScpbToAdd">
+			<result name="success">/page/pb/scpbadd.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action> 
+		<action name="scpbadd" class="office.pb.action.ScpbAdd">
+			<result name="success">/page/pb/pbconfigsuccess.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action> 
+		<action name="scpbtomodify" class="office.pb.action.ScpbToModify">
+			<result name="success">/page/pb/scpbtomodify.jsp</result>
+		</action> 
+		<action name="scpbmodify" class="office.pb.action.ScpbModify">
+			<result name="success">/page/pb/pbconfigsuccess.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action>
+		<action name="ygpbtoadd" class="office.pb.action.YgpbToAdd">
+			<result name="success">/page/pb/ygpbadd.jsp</result>
+		</action> 
+		<action name="ygpbadd" class="office.pb.action.YgpbAdd">
+			<result name="success">/page/pb/pbconfigsuccess.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action> 
+		<action name="ygpbtomodify" class="office.pb.action.YgpbToModify">
+			<result name="success">/page/pb/ygpbtomodify.jsp</result>
+		</action> 
+		<action name="ygpbmodify" class="office.pb.action.YgpbModify">
+			<result name="success">/page/pb/pbconfigsuccess.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action>
+		<action name="sttoadd" class="office.pb.action.StToAdd">
+			<result name="success">/page/pb/stadd.jsp</result>
+		</action> 
+		<action name="stadd" class="office.pb.action.StAdd">
+			<result name="success">/page/pb/pbconfigsuccess.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action> 
+		<action name="sttomodify" class="office.pb.action.StToModify">
+			<result name="success">/page/pb/sttomodify.jsp</result>
+		</action>
+		<action name="stmodify" class="office.pb.action.StModify">
+			<result name="success">/page/pb/pbconfigsuccess.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action> 
+		<action name="pbdel" class="office.pb.action.PbDel">
+			<result name="success">/page/pb/pbconfigsuccess.jsp</result>
+		</action> 
+		<action name="ptadd" class="office.pb.action.PtAdd">
+			<result name="success">/page/pb/pbconfigsuccess.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action> 
+		<action name="ppadd" class="office.pb.action.PpAdd">
+			<result name="success">/page/pb/pbconfigsuccess.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action> 
+		<action name="pttomodify" class="office.pb.action.PtToModify">
+			<result name="success">/page/pb/pttomodify.jsp</result>
+		</action> 
+		<action name="pptomodify" class="office.pb.action.PpToModify">
+			<result name="success">/page/pb/pptomodify.jsp</result>
+		</action>
+		<action name="pptoadd" class="office.pb.action.PpToAdd">
+			<result name="success">/page/pb/ppadd.jsp</result>
+		</action>  
+		<action name="ptmodify" class="office.pb.action.PtModify">
+			<result name="success">/page/pb/pbconfigsuccess.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action>
+		<action name="ppmodify" class="office.pb.action.PpModify">
+			<result name="success">/page/pb/pbconfigsuccess.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action>
+		<action name="getpbimport" class="office.pb.action.GetPbImport">
+			<result name="success">/page/pb/pbimport.jsp</result>
+		</action>
+		<action name="importscpb" class="office.pb.action.ImportScpb">
+			<result name="success">/page/pb/pbimportsuccess.jsp</result>
+		</action>
+		<action name="importpeoplepb" class="office.pb.action.ImportPeoplepb">
+			<result name="success">/page/pb/pbimportsuccess.jsp</result>
+		</action>
+		<action name="importscpbry" class="office.pb.action.ImportScpbry">
+			<result name="success">/page/pb/pbimportsuccess.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action>
+		<action name="scpbtable" class="office.pb.action.ViewScpbTable">
+			<result name="success">/page/pb/scpbtable.jsp</result>
+		</action>
+		<action name="processpbmx" class="office.pb.action.ProcessPbMx">
+			<result name="success">/page/pb/pbimportsuccess.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action>
+		<action name="pbtabledel" class="office.pb.action.PbTableDel">
+			<result name="success">/page/public/successnoreturn.jsp</result>
+		</action>
+		<action name="pbmx" class="office.pb.action.PbMx">
+			<result name="success">/page/pb/pbmx.jsp</result>
+		</action>
+		<action name="tochangepbmx" class="office.pb.action.ToChangePbMx">
+			<result name="success">/page/pb/tochangepbmx.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action>
+		<action name="changepbmx" class="office.pb.action.ChangePbMx">
+			<result name="success">/page/public/successnoreturn.jsp</result>
+		</action>
+		<action name="pbtableinit" class="office.pb.action.PbTableInit">
+			<result name="success">/page/public/successnoreturn.jsp</result>
+		</action>
+		<action name="importygxx" class="office.pb.action.ImportYgxx">
+			<result name="success">/page/public/successnoreturn.jsp</result>
+		</action>
+		<action name="pbmxdel" class="office.pb.action.PbMxDel">
+			<result name="success">/page/public/successnoreturn.jsp</result>
+		</action>
+	</package>
+</struts>    

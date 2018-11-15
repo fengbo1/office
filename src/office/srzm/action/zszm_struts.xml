@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="srzm_default" extends="struts-default" >
+		<action name="showsrzmpage" class="office.srzm.action.ShowSrzmPage">
+			<result name="success">/page/srzm/srzm_page.jsp</result>
+		</action>
+		<action name="subsrzmpage" class="office.srzm.action.SubSrzmPage">
+			<result name="success">/page/srzm/subsuccess.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+			<result name="nosrzm">/page/public/error.jsp</result>
+		</action>
+		<action name="viewsrzm" class="office.srzm.action.ViewSrzmLzz">
+			<result name="success">/page/srzm/srzm_lzz_list.jsp</result>
+		</action>
+		<action name="updatesrzmstatus" class="office.srzm.action.UpdateSrzmStatus">
+			<result name="success">/page/srzm/under_success.jsp</result>
+		</action>
+		<action name="deletesrzmpage" class="office.srzm.action.DeleteSrzmPage">
+			<result name="success">/page/srzm/under_success.jsp</result>
+		</action>
+		<action name="viewsrzmdetail" class="office.srzm.action.ViewSrzmDetail">
+			<result name="success">/page/srzm/srzm_detail.jsp</result>
+		</action>
+		<action name="showsrzmpagedf" class="office.srzm.action.ShowSrzmPageDf">
+			<result name="success">/page/srzm/srzm_page_df.jsp</result>
+		</action>
+		<action name="showsrzmpagedfajax" class="office.srzm.action.ShowSrzmPageDfAjax">
+			<result name="success">/page/srzm/srzm_page_df_ajax.jsp</result>
+			<result name="failed">/page/leave/faileded.jsp</result>
+			<result name="failededed">/page/leave/failededed.jsp</result>
+		</action>
+		<action name="srzmshenpi" class="office.srzm.action.SrzmShenpi">
+			<result name="success">/page/srzm/under_success.jsp</result>
+		</action>
+		<action name="viewsrzmycb" class="office.srzm.action.ViewSrzmYcb">
+			<result name="success">/page/srzm/srzm_ycb.jsp</result>
+		</action>
+		<action name="viewsrzmybj" class="office.srzm.action.ViewSrzmYbj">
+			<result name="success">/page/srzm/srzm_ybj.jsp</result>
+		</action>
+		<action name="viewsrzmunder" class="office.srzm.action.ViewSrzmUnder">
+			<result name="success">/page/srzm/srzm_under_list.jsp</result>
+		</action>
+		<action name="srzmunderdetail" class="office.srzm.action.ViewSrzmUnderDetail">
+			<result name="success">/page/srzm/srzm_under_detail.jsp</result>
+		</action>
+		<action name="viewsrzmall" class="office.srzm.action.ViewSrzmAll">
+			<result name="success">/page/srzm/srzm_all.jsp</result>
+			<result name="successtd">/page/srzm/srzm_alltd.jsp</result>
+		</action>
+		<action name="exportsrzm" class="office.srzm.action.ExportSrzm">
+			<result name="success">/page/public/derivedetail.jsp</result>
+		</action>
+		<action name="srzmqueren" class="office.srzm.action.SrzmQueren">
+			<result name="success">/page/srzm/under_success.jsp</result>
+		</action>
+	</package>
+</struts>    

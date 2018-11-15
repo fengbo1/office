@@ -1,0 +1,66 @@
+﻿.menu {font-family: '黑体'; width:190px; position:relative; margin:0; font-size:100%; }
+.menu ul li a, .menu ul li a:visited {width:190px;display:block; text-decoration:none; color:#000;width:190px; height:20px; text-align:center; color:#fff; border:1px solid #aaa; background:#710069; line-height:20px; font-size:11px; overflow:hidden;}
+.menu ul {width:190px;padding:0; margin:0;list-style-type: none; }
+.menu ul li {width:190px;float:left; margin-right:1px; position:relative;}
+.menu ul li ul {display: none;}
+
+/* specific to non IE browsers */
+.menu ul li:hover a {width:190px;color:#fff; background:#36f;}
+.menu ul li:hover ul {display:block; position:absolute; top:0px; left:191px; width:190px;border-width: 2px;border-color:#d2c8b5;}
+.menu ul li:hover ul li a.hide {background:#6a3; color:#fff;}
+.menu ul li:hover ul li:hover a.hide {background:#6fc; color:#000;}
+.menu ul li:hover ul li ul {display: none;}
+.menu ul li:hover ul li a {display:block; background:#eee; color:#000;}
+.menu ul li:hover ul li a:hover {background:#6fc; color:#000;}
+.menu ul li:hover ul li:hover ul {display:block; position:absolute; left:105px; top:0;}
+
+
+ul.expmenu{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+/* expmenu */
+ul.expmenu{width:190px;margin:0px auto;}
+ul.expmenu li div.header{padding:12px;border-bottom:1px #fff solid;}
+ul.expmenu li:last-child div.header{border-bottom:none;}
+ul.expmenu li ul li {list-style:none;font-weight:900;font-size:100%;font-family: '黑体';	background-color:#ECE8E0;padding:12px;border:1px solid #000000;color:#000000;text-shadow:0px 1px 0px rgba(255, 255, 255, 0.8);}
+ul.expmenu li ul li:last-child{border-bottom:none;}
+ul.expmenu li ul li.selected{background-color:#B0E2FF;}
+ul.expmenu li ul li:hover{list-style:none;font-weight:900;font-size:100%;background-color:#FFFFFF;cursor:pointer;}
+ul.expmenu div.header{
+	color:#203f61;
+	text-shadow:0px 1px 0px rgba(255, 255, 255, 0.2);
+	
+	background:#188AE7;/* Old browsers */
+/*	background:-moz-linear-gradient(top,  #188AE7 0%,#7FA7FD 100%);/* FF3.6+ */
+/*	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#188AE7), color-stop(100%,#7FA7FD));/* Chrome,Safari4+ */
+/*	background:-webkit-linear-gradient(top,  #188AE7 0%,#7FA7FD 100%);/* Chrome10+,Safari5.1+ */
+/*	background:-o-linear-gradient(top,  #188AE7 0%#7FA7FD 100%);/* Opera 11.10+ */
+/*	background:-ms-linear-gradient(top,  #188AE7 0%,#7FA7FD 100%);/* IE10+ */
+/*	background:linear-gradient(to bottom, #188AE7 0%,#7FA7FD 100%);/* W3C */
+/*	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#188AE7', endColorstr='#7FA7FD',GradientType=0 );/* IE6-9 */
+}
+ul.expmenu li div.header .label{background:no-repeat;color: #fff;/*text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.8);*/ font-weight:bold;font-size:120%;font-family: '黑体';}
+/*ul.expmenu li div.header .arrow{display:block;width:16px;height:16px;background:no-repeat center;float:right;}*/
+ul.expmenu li div.header .arrow.up{background-image:url(../images/arrow_u.png);}
+ul.expmenu li div.header .arrow.down{background-image:url(../images/arrow_d.png);}
+ul.expmenu li .menu{display:none;}	
+/* Mouse Events */
+ul.expmenu div.header:hover{
+	background:#60aded;/* Old browsers 96C4EA*/
+/*	background:-moz-linear-gradient(top, #188AE7 0%, #7FA7FD 100%);/* FF3.6+ */
+/*	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#188AE7), color-stop(100%,#7FA7FD));/* Chrome,Safari4+ */
+/*	background:-webkit-linear-gradient(top, #188AE7 0%,#7FA7FD 100%);/* Chrome10+,Safari5.1+ */
+/*	background:-o-linear-gradient(top, #188AE7 0%,#7FA7FD 100%);/* Opera 11.10+ */
+/*	background:-ms-linear-gradient(top, #188AE7 0%,#7FA7FD 100%);/* IE10+ */
+/*	background:linear-gradient(to bottom, #188AE7 0%,#7FA7FD 100%);/* W3C */
+	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#188AE7', endColorstr='#7FA7FD',GradientType=0 );/* IE6-9 */
+	cursor:pointer;
+}
+
+ul.expmenu li ul li:not(.selected):hover{
+	background:#60aded;/* Old browsers */
+	cursor:pointer;
+}
+ul.expmenu li ul li:not(.selected):active{
+	background:#f1f1f1;/* Old browsers */
+	cursor:pointer;
+}

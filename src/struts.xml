@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+
+<struts>
+	<!-- 引入其他配置文件  -->
+	<!-- <include file="work/userinfo/action/userinfo_struts.xml"></include> -->
+	<include file="office/userinfo/action/userinfo_struts.xml"></include>
+	<include file="office/leave/action/leave_struts.xml"></include>
+	<include file="office/mycalendar/action/mycalendar_struts.xml"></include>
+	<include file="office/wcgg/action/wcgg_struts.xml"></include>
+	<include file="office/jbsp/action/jbsp_struts.xml"></include>
+	<include file="office/kqqs/action/kqqs_struts.xml"></include>
+	<include file="office/kqjl/action/kqjl_struts.xml"></include>
+	<include file="office/welcome/welcome_struts.xml"></include>
+	<include file="office/importcsh/importcsh_struts.xml"></include>
+	<include file="office/pb/action/pb_struts.xml"></include>
+	<include file="office/pb2/action/pb2_struts.xml"></include>
+	<include file="office/zszm/action/zszm_struts.xml"></include>
+	<include file="office/srzm/action/zszm_struts.xml"></include>
+	<include file="office/yscj/action/yscj_struts.xml"></include>
+	<include file="office/zhuanti/zhuanti_struts.xml"></include>
+	<include file="office/mjgl/mjgl_struts.xml"></include>
+	<include file="office/zcgl/action/zcgl_struts.xml"></include>
+	<include file="office/uass/action/uass_struts.xml"></include>
+	<include file="office/tempxx/action/tempxx_struts.xml"></include>
+</struts>

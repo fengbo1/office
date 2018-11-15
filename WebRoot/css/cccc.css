@@ -1,0 +1,115 @@
+<style type="text/css">
+<!--
+body{
+	margin:0px auto;
+	/*text-align:center;*/
+	}
+.zhuti {
+	left: 70px;
+	top: 0px;
+	width: 1045px;
+	height: 1100px;
+	border:0px solid #0033FF}
+.top {
+	height: 155px;
+	width: 1045px;
+}
+.daohang{
+	height: 155px;
+	width: 1045px;
+	border: thin solid #0000FF;
+}
+.gundong{
+	height: 155px;
+	width: 1045px;
+	border: thin solid #0000FF;
+}
+.left1{
+	height: auto;
+	width: auto;
+	border: thin none #0000FF;
+}
+.out{
+	border: thin solid #0000FF;
+	line-height: 5mm;
+}
+.biaoti{
+	border-top-color: #FFFFFF;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+}
+.timu{
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-bottom-style: dashed;
+	border-top-color: #333333;
+	border-right-color: #333333;
+	border-bottom-color: #333333;
+	border-left-color: #333333;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+}
+
+.newsFont {
+	FLOAT: left; OVERFLOW: hidden; WIDTH: 80%; LINE-HEIGHT: 25px; HEIGHT: 25px
+	}
+#zhongxindongtai {
+	BORDER-RIGHT: #61abd1 1px solid;
+	BORDER-TOP: #61abd1 1px solid;
+	MARGIN-BOTTOM: 10px;
+	BORDER-LEFT: #61abd1 1px solid;
+	BORDER-BOTTOM: #61abd1 1px solid;
+	DISPLAY: inline-block;
+	FLOAT: left;
+	OVERFLOW: hidden;
+	text-align: left;
+}
+.midbox {
+	DISPLAY: inline-block;
+	FLOAT: left;
+	OVERFLOW: hidden;
+	WIDTH: 397px;
+	MARGIN-RIGHT: 10px;
+	_margin-right: 12px;
+	MARGIN-BOTTOM: 10px;
+	text-align: left;
+	border: 1px solid #0000FF;
+	position: relative;
+	visibility: visible;
+}
+.box-border {
+	BORDER-RIGHT: #61abd1 1px solid; BORDER-TOP: #61abd1 1px solid; MARGIN-BOTTOM: 10px; BORDER-LEFT: #61abd1 1px solid; BORDER-BOTTOM: #61abd1 1px solid
+}
+.newsContent UL {
+	BORDER-BOTTOM: #b2b2b2 1px dotted;
+	HEIGHT: 25px;
+	filter: Gray;
+}
+
+-->
+</style>
+
+.b1,.b2,.b3,.b4,.b1b,.b2b,.b3b,.b4b,.b{display:block;overflow:hidden;}
+
+.b1,.b2,.b3,.b1b,.b2b,.b3b{height:1px;}
+
+.b2,.b3,.b4,.b2b,.b3b,.b4b,.b{border-left:1px solid #999;border-right:1px solid #999;}
+
+.b1,.b1b{margin:0 5px;background:#999;}
+
+.b2,.b2b{margin:0 3px;border-width:2px;}
+
+.b3,.b3b{margin:0 2px;}
+
+.b4,.b4b{height:2px;margin:0 1px;}
+
+.d1{background:#ffffff;}  /*���� Բ���ͱ�������ɫ*/
+
+.k {height:190px;} /*����ÿ��Բ���ο�ĸ߶�*/
+.k2 {height:325px;}
+.k3 {height:635px;}
+.k4{height:90px}

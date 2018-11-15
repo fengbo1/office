@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	  <package name="zcgl_default" extends="struts-default" >
+		<action name="showzcapplypage" class="office.zcgl.action.ShowZcApplyPage">
+			<result name="success">/page/zcgl/zcapply_page.jsp</result>
+		</action>
+	
+	   <action name="dateoverajax" class="office.zcgl.action.DateOverAjax">
+			<result name="success">/page/zcgl/isdateoverajax.jsp</result>
+		</action>
+		<action name="getzichansearchleixing" class="office.zcgl.action.GetTypeSearchAjax">
+			<result name="success">/page/zcgl/gettype_ajax.jsp</result>
+		</action>
+		<action name="subzcapplypage" class="office.zcgl.action.SubZcApplyPage">
+			<result name="success">/page/zcgl/subsuccess.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+			<result name="nozcsl">/page/public/error.jsp</result>
+		</action>
+		<action name="viewzcapplylzz" class="office.zcgl.action.ViewZcapplyLzz">
+			<result name="success">/page/zcgl/zcapply_lzz_list.jsp</result>
+		</action>
+		<action name="viewzcapplydetail" class="office.zcgl.action.ViewZcApplyDetail">
+			<result name="success">/page/zcgl/zcapply_detail.jsp</result>
+		</action>
+		<action name="viewzcapplyunder" class="office.zcgl.action.ViewZcApplyUnder">
+			<result name="success">/page/zcgl/zcapply_under_list.jsp</result>
+		</action>
+		<action name="viewzcapplyunderdetail" class="office.zcgl.action.ViewZcApplyUnderDetail">
+			<result name="success">/page/zcgl/zcapply_under_detail.jsp</result>
+		</action>
+		<action name="viewzcapplyybj" class="office.zcgl.action.ViewZcApplyYbj">
+			<result name="success">/page/zcgl/zcapply_ybj.jsp</result>
+		</action>
+		<action name="viewzcapplyycb" class="office.zcgl.action.ViewZcApplyYcb">
+			<result name="success">/page/zcgl/zcapply_ycb.jsp</result>
+		</action>
+		<action name="viewzcapplyall" class="office.zcgl.action.ViewZcApplyAll">
+			<result name="success">/page/zcgl/zcapply_all.jsp</result>
+			<result name="successtd">/page/zcgl/zcapply_alltd.jsp</result>
+		</action>
+		<action name="zcapplyshenpi" class="office.zcgl.action.ZcApplyShenpi">
+			<result name="success">/page/zcgl/under_success.jsp</result>
+		</action>
+		<action name="zcapplyqueren" class="office.zcgl.action.ZcApplyQueRen">
+			<result name="success">/page/zcgl/under_success.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action>
+		<action name="zcapplyfenqueren" class="office.zcgl.action.ZcApplyFenQueRen">
+			<result name="success">/page/zcgl/under_success.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action>
+		<action name="updatezcapplystatus" class="office.zcgl.action.UpdateZcApplyStatus">
+			<result name="success">/page/zcgl/under_success.jsp</result>
+		</action>
+		<action name="deletezcapplypage" class="office.zcgl.action.DeleteZcApplyPage">
+			<result name="success">/page/zcgl/under_success.jsp</result>
+		</action>
+		<action name="viewzcsearchall" class="office.zcgl.action.ViewZcSearchAll">
+			<result name="success">/page/zcgl/zcsearch_all.jsp</result>
+		</action>
+		<action name="viewzcsearchallzx" class="office.zcgl.action.ViewZcSearchAllZx">
+			<result name="success">/page/zcgl/zcsearch_alltd.jsp</result>
+		</action>
+		<action name="getzichanmingcheng" class="office.zcgl.action.GetNameAjax">
+			<result name="success">/page/zcgl/getname_ajax.jsp</result>
+		</action>
+		<action name="getzichansearchmingcheng" class="office.zcgl.action.GetNameSearchAjax">
+			<result name="success">/page/zcgl/getname_ajax.jsp</result>
+		</action>
+	    <action name="showzckfinpage" class="office.zcgl.action.ShowZcKfInPage">
+			<result name="success">/page/zcgl/zckfin_page.jsp</result>
+		</action>
+		<action name="subzckfinpage" class="office.zcgl.action.SubZcKfInPage">
+			<result name="success">/page/zcgl/subsuccesszckfin.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action>
+		<action name="viewzckfinlzz" class="office.zcgl.action.ViewZcKfInLzz">
+			<result name="success">/page/zcgl/zckfin_lzz_list.jsp</result>
+		</action>
+		<action name="viewzckfinunder" class="office.zcgl.action.ViewZcKfInUnder">
+			<result name="success">/page/zcgl/zckfin_under_list.jsp</result>
+		</action>
+		<action name="zckfinshenpi" class="office.zcgl.action.ZcKfInShenpi">
+			<result name="success">/page/zcgl/under_sucesszckfin.jsp</result>
+		</action>
+		<action name="zckfinreturn" class="office.zcgl.action.ZcKfInReturn">
+			<result name="success">/page/zcgl/under_sucesszckfin.jsp</result>
+		</action>
+		<action name="viewzckfindetail" class="office.zcgl.action.ViewZcKfInDetail">
+			<result name="success">/page/zcgl/zckfin_detail.jsp</result>
+		</action>
+		<action name="checkzckfin" class="office.zcgl.action.CheckZcKfIn">
+			<result name="success">/page/zcgl/zckfin_check.jsp</result>
+		</action>
+		<action name="checkzckfout" class="office.zcgl.action.CheckZcKfOut">
+			<result name="success">/page/zcgl/zckfout_check.jsp</result>
+		</action>
+		<action name="updatezckfinstatus" class="office.zcgl.action.UpdateZcKfInStatus">
+			<result name="success">/page/zcgl/under_sucesszckfin.jsp</result>
+		</action>
+		<action name="deletezckfinpage" class="office.zcgl.action.DeleteZcKfInPage">
+			<result name="success">/page/zcgl/under_sucesszckfin.jsp</result>
+		</action>
+		<action name="viewzckfinall" class="office.zcgl.action.ViewZcKfInAll">
+			<result name="success">/page/zcgl/zckfin_all.jsp</result>
+		</action>
+		
+		<action name="showzckfoutpage" class="office.zcgl.action.ShowZcKfOutPage">
+			<result name="success">/page/zcgl/zckfout_page.jsp</result>
+		</action>
+	
+		<action name="subzckfoutpage" class="office.zcgl.action.SubZcKfOutPage">
+			<result name="success">/page/zcgl/subsuccesszckfout.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action>
+		<action name="viewzckfoutlzz" class="office.zcgl.action.ViewZcKfOutLzz">
+			<result name="success">/page/zcgl/zckfout_lzz_list.jsp</result>
+		</action>
+		<action name="viewzckfoutunder" class="office.zcgl.action.ViewZcKfOutUnder">
+			<result name="success">/page/zcgl/zckfout_under_list.jsp</result>
+		</action>
+		<action name="zckfoutshenpi" class="office.zcgl.action.ZcKfOutShenpi">
+			<result name="success">/page/zcgl/under_sucesszckfout.jsp</result>
+		</action>
+		<action name="zckfoutreturn" class="office.zcgl.action.ZcKfOutReturn">
+			<result name="success">/page/zcgl/under_sucesszckfout.jsp</result>
+		</action>
+		<action name="viewzckfoutdetail" class="office.zcgl.action.ViewZcKfOutDetail">
+			<result name="success">/page/zcgl/zckfout_detail.jsp</result>
+		</action>
+		
+		<action name="updatezckfoutstatus" class="office.zcgl.action.UpdateZcKfOutStatus">
+			<result name="success">/page/zcgl/under_sucesszckfout.jsp</result>
+		</action>
+		<action name="deletezckfoutpage" class="office.zcgl.action.DeleteZcKfOutPage">
+			<result name="success">/page/zcgl/under_sucesszckfout.jsp</result>
+		</action>
+		<action name="viewzckfoutall" class="office.zcgl.action.ViewZcKfOutAll">
+			<result name="success">/page/zcgl/zckfout_all.jsp</result>
+		</action>
+		
+		<action name="showzcborrowpage" class="office.zcgl.action.ShowZcBorrowPage">
+			<result name="success">/page/zcgl/zcborrow_page.jsp</result>
+		</action>
+		<action name="getzichanshuliangajax" class="office.zcgl.action.GetNumAjax">
+			<result name="success">/page/zcgl/getnum_ajax.jsp</result>
+		</action>
+		<action name="getzichanleixing" class="office.zcgl.action.GetTypeAjax">
+			<result name="success">/page/zcgl/gettype_ajax.jsp</result>
+		</action>
+		
+		<action name="getzichanshuliangreturnajax" class="office.zcgl.action.GetNumReturnAjax">
+			<result name="success">/page/zcgl/getnum_ajax.jsp</result>
+		</action>
+		<action name="getzichanleixingreturn" class="office.zcgl.action.GetTypeReturnAjax">
+			<result name="success">/page/zcgl/gettype_ajax.jsp</result>
+		</action>
+		<action name="subzcborrowpage" class="office.zcgl.action.SubZcBorrowPage">
+			<result name="success">/page/zcgl/subsuccessborrow.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+			<result name="nozcjy">/page/public/error.jsp</result>
+		</action>
+		<action name="viewzcborrowlzz" class="office.zcgl.action.ViewZcBorrowLzz">
+			<result name="success">/page/zcgl/zcborrow_lzz_list.jsp</result>
+		</action>
+		<action name="viewzcborrowdetail" class="office.zcgl.action.ViewZcBorrowDetail">
+			<result name="success">/page/zcgl/zcborrow_detail.jsp</result>
+		</action>
+		<action name="viewzcborrowunder" class="office.zcgl.action.ViewZcBorrowUnder">
+			<result name="success">/page/zcgl/zcborrow_under_list.jsp</result>
+		</action>
+		<action name="viewzcborrowunderdetail" class="office.zcgl.action.ViewZcBorrowUnderDetail">
+			<result name="success">/page/zcgl/zcborrow_under_detail.jsp</result>
+		</action>
+		<action name="viewzcborrowybj" class="office.zcgl.action.ViewZcBorrowYbj">
+			<result name="success">/page/zcgl/zcborrow_ybj.jsp</result>
+		</action>
+		<action name="viewzcborrowycb" class="office.zcgl.action.ViewZcBorrowYcb">
+			<result name="success">/page/zcgl/zcborrow_ycb.jsp</result>
+		</action>
+		<action name="viewzcborrowall" class="office.zcgl.action.ViewZcBorrowAll">
+			<result name="success">/page/zcgl/zcborrow_all.jsp</result>
+			<result name="successtd">/page/zcgl/zcborrow_alltd.jsp</result>
+		</action>
+		<action name="zcborrowshenpi" class="office.zcgl.action.ZcBorrowShenpi">
+			<result name="success">/page/zcgl/under_successborrow.jsp</result>
+		</action>
+		<action name="zcborrowqueren" class="office.zcgl.action.ZcBorrowQueRen">
+			<result name="success">/page/zcgl/under_successborrow.jsp</result>
+		</action>
+		<action name="zcborrowfenqueren" class="office.zcgl.action.ZcBorrowFenQueRen">
+			<result name="success">/page/zcgl/under_successborrow.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action>
+		<action name="updatezcborrowstatus" class="office.zcgl.action.UpdateZcBorrowStatus">
+			<result name="success">/page/zcgl/under_successborrow.jsp</result>
+		</action>
+		<action name="deletezcborrowpage" class="office.zcgl.action.DeleteZcBorrowPage">
+			<result name="success">/page/zcgl/under_successborrow.jsp</result>
+		</action>
+		
+		
+		<action name="showzcreturnpage" class="office.zcgl.action.ShowZcReturnPage">
+			<result name="success">/page/zcgl/zcreturn_page.jsp</result>
+		</action>
+		
+		<action name="subzcreturnpage" class="office.zcgl.action.SubZcReturnPage">
+			<result name="success">/page/zcgl/subsuccessreturn.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+			<result name="nozcgh">/page/public/error.jsp</result>
+		</action>
+	
+		<action name="viewzcreturnlzz" class="office.zcgl.action.ViewZcReturnLzz">
+			<result name="success">/page/zcgl/zcreturn_lzz_list.jsp</result>
+		</action>
+		<action name="viewzcreturndetail" class="office.zcgl.action.ViewZcReturnDetail">
+			<result name="success">/page/zcgl/zcreturn_detail.jsp</result>
+		</action>
+		<action name="viewzcreturnunder" class="office.zcgl.action.ViewZcReturnUnder">
+			<result name="success">/page/zcgl/zcreturn_under_list.jsp</result>
+		</action>
+		<action name="viewzcreturnunderdetail" class="office.zcgl.action.ViewZcReturnUnderDetail">
+			<result name="success">/page/zcgl/zcreturn_under_detail.jsp</result>
+		</action>
+		<action name="viewzcreturnybj" class="office.zcgl.action.ViewZcReturnYbj">
+			<result name="success">/page/zcgl/zcreturn_ybj.jsp</result>
+		</action>
+		<action name="viewzcreturnycb" class="office.zcgl.action.ViewZcReturnYcb">
+			<result name="success">/page/zcgl/zcreturn_ycb.jsp</result>
+		</action>
+		<action name="viewzcreturnall" class="office.zcgl.action.ViewZcReturnAll">
+			<result name="success">/page/zcgl/zcreturn_all.jsp</result>
+			<result name="successtd">/page/zcgl/zcreturn_alltd.jsp</result>
+		</action>
+		<action name="zcreturnshenpi" class="office.zcgl.action.ZcReturnShenpi">
+			<result name="success">/page/zcgl/under_successreturn.jsp</result>
+		</action>
+		<action name="zcreturnqueren" class="office.zcgl.action.ZcReturnQueRen">
+			<result name="success">/page/zcgl/under_successreturn.jsp</result>
+		</action>
+		<action name="updatezcreturnstatus" class="office.zcgl.action.UpdateZcReturnStatus">
+			<result name="success">/page/zcgl/under_successreturn.jsp</result>
+		</action>
+		<action name="deletezcreturnpage" class="office.zcgl.action.DeleteZcReturnPage">
+			<result name="success">/page/zcgl/under_successreturn.jsp</result>
+		</action>
+		<action name="exportassetinfo" class="office.zcgl.action.ExportAssetInfo">
+			<result name="success">/page/public/derivedetail.jsp</result>
+		</action>
+		<action name="exportassetinfodetail" class="office.zcgl.action.ExportAssetInfoDetail">
+			<result name="success">/page/public/derivedetail.jsp</result>
+		</action>
+		<action name="exportassetchuinfodetail" class="office.zcgl.action.ExportAssetChuInfoDetail">
+			<result name="success">/page/public/derivedetail.jsp</result>
+		</action>
+		<action name="importassetinfo" class="office.zcgl.action.ImportAssetInfo">
+			<result name="success">/page/public/success.jsp</result>
+		</action>
+		<action name="showassetinfoimport" class="office.zcgl.action.ShowAssetInfoImport">
+			<result name="success">/page/zcgl/zcinfodr.jsp</result>
+		</action>
+		<action name="viewzcapplyfennum" class="office.zcgl.action.ViewZcApplyFenNum">
+			<result name="success">/page/zcgl/zcapply_fennum.jsp</result>
+			
+		</action>
+		<action name="viewzcapplyfenname" class="office.zcgl.action.ViewZcApplyFenName">
+			<result name="success">/page/zcgl/zcapply_fenname.jsp</result>
+		</action>
+		<action name="exportapplyfennum" class="office.zcgl.action.ExportApplyFenNum">
+			<result name="success">/page/public/derivedetail.jsp</result>
+		</action>
+		<action name="exportapplyfenname" class="office.zcgl.action.ExportApplyFenName">
+			<result name="success">/page/public/derivedetail.jsp</result>
+		</action>
+		<action name="importapplyfennum" class="office.zcgl.action.ImportAssetApplyFenNum">
+			<result name="success">/page/zcgl/importnumsuccess.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action>
+		<action name="importapplyfenname" class="office.zcgl.action.ImportAssetApplyFenName">
+			<result name="success">/page/zcgl/importnamesuccess.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action>
+		
+		<action name="exportborrowfennum" class="office.zcgl.action.ExportBorrowFenNum">
+			<result name="success">/page/public/derivedetail.jsp</result>
+		</action>
+		<action name="exportborrowfenname" class="office.zcgl.action.ExportBorrowFenName">
+			<result name="success">/page/public/derivedetail.jsp</result>
+		</action>
+		
+		<action name="viewzcborrowfennum" class="office.zcgl.action.ViewZcBorrowFenNum">
+			<result name="success">/page/zcgl/zcborrow_fennum.jsp</result>
+			
+		</action>
+		<action name="viewzcborrowfenname" class="office.zcgl.action.ViewZcBorrowFenName">
+			<result name="success">/page/zcgl/zcborrow_fenname.jsp</result>
+		</action>
+		
+		<action name="importborrowfennum" class="office.zcgl.action.ImportAssetBorrowFenNum">
+			<result name="success">/page/zcgl/importbnumsuccess.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action>
+		<action name="importborrowfenname" class="office.zcgl.action.ImportAssetBorrowFenName">
+			<result name="success">/page/zcgl/importbnamesuccess.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action>
+		
+		<action name="searchreturnajax" class="office.zcgl.action.SearchReturnAjax">
+			<result name="success">/page/zcgl/getsearchreturn_ajax.jsp</result>
+		</action>
+		
+		<action name="importzckfin" class="office.zcgl.action.ImportZcKfIn">
+			<result name="success">/page/zcgl/zckfin_success.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action>
+		<action name="showkfin" class="office.zcgl.action.ShowKfIn">
+			<result name="success">/page/zcgl/zckfin_showdetail.jsp</result>	
+		</action>
+		<action name="showimportzckfinpage" class="office.zcgl.action.ShowImportZcKfInPage">
+			<result name="success">/page/zcgl/zckfin_page.jsp</result>	
+		</action>
+		<action name="importzckfout" class="office.zcgl.action.ImportZcKfOut">
+			<result name="success">/page/zcgl/zckfout_success.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action>
+		<action name="showkfout" class="office.zcgl.action.ShowKfOut">
+			<result name="success">/page/zcgl/zckfout_showdetail.jsp</result>	
+		</action>
+		<action name="showimportzckfoutpage" class="office.zcgl.action.ShowImportZcKfOutPage">
+			<result name="success">/page/zcgl/zckfout_page.jsp</result>	
+		</action>
+		<action name="showsearchdetail" class="office.zcgl.action.ShowSearchDetail">
+			<result name="success">/page/zcgl/zcsearch_showdetail.jsp</result>	
+		</action>
+				
+		<action name="changearea" class="office.zcgl.action.ChangeArea">
+			<result name="success">/page/zcgl/changearea_page.jsp</result>	
+		</action>
+		<action name="changepeople" class="office.zcgl.action.ChangePeople">
+			<result name="success">/page/zcgl/changepeople_page.jsp</result>	
+		</action>
+		<action name="subchangeareapage" class="office.zcgl.action.SubChangeAreaPage">
+			<result name="success">/page/zcgl/changearea_success.jsp</result>	
+		</action>
+	     <action name="subchangepeoplepage" class="office.zcgl.action.SubChangePeoplePage">
+			<result name="success">/page/zcgl/changearea_success.jsp</result>	
+		</action>
+	     
+	     <action name="changesn" class="office.zcgl.action.ChangeSn">
+			<result name="success">/page/zcgl/changesn_page.jsp</result>	
+		</action>
+		<action name="subchangesnpage" class="office.zcgl.action.SubChangeSnPage">
+			<result name="success">/page/zcgl/changesn_success.jsp</result>	
+		</action>
+	    <action name="viewzcsearchallnewzx" class="office.zcgl.action.ViewZcSearchAllNewZx">
+			<result name="success">/page/zcgl/zcsearchnewest_alltd.jsp</result>	
+		</action>
+		  <action name="viewzcsearchallnew" class="office.zcgl.action.ViewZcSearchAllNew">
+			<result name="success">/page/zcgl/zcsearchnewest_all.jsp</result>	
+		</action>
+		
+		<action name="viewzcsearchallnewzong" class="office.zcgl.action.ViewZcSearchAllNewZong">
+			<result name="success">/page/zcgl/zcsearchnewest_all.jsp</result>	
+		</action>
+		 <action name="viewzcsearchallnewwaibao" class="office.zcgl.action.ViewZcSearchAllNewWaiBao">
+			<result name="success">/page/zcgl/zcsearchnewest_allwai.jsp</result>	
+		</action>
+		 <action name="viewzcsearchallnewwaibao1" class="office.zcgl.action.ViewZcSearchAllNewWaiBao1">
+			<result name="success">/page/zcgl/zcsearchnewest_allwai1.jsp</result>	
+		</action>
+		
+		 <action name="getzichanmingchengreturn" class="office.zcgl.action.GetNameReturnAjax">
+			<result name="success">/page/zcgl/getreturnname_ajax.jsp</result>	
+		</action>
+					
+		<action name="importchangeinfo" class="office.zcgl.action.ImportChangeInfo">
+			<result name="success">/page/public/success.jsp</result>
+		</action>
+					
+		<action name="importchangeinfowai" class="office.zcgl.action.ImportChangeInfoWai">
+			<result name="success">/page/public/success.jsp</result>
+		</action>
+	</package>
+</struts>    

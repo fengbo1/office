@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="pb2_default" extends="struts-default" >
+	 	<action name="showygxxpage" class="office.pb2.action.ShowYgxxPage">
+			<result name="success">/page/pb2/ygxx_page.jsp</result>
+		</action> 
+		<action name="subygxxpage" class="office.pb2.action.SubYgxxPage">
+			<result name="success">/page/pb2/ygxx_success.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action> 
+		<action name="ygxxlzz" class="office.pb2.action.YgxxLzz">
+			<result name="success">/page/pb2/ygxx_lzz.jsp</result>
+		</action> 
+		<action name="viewxpdetail" class="office.pb2.action.ViewXpDetail">
+			<result name="success">/page/pb2/ygxx_detail.jsp</result>
+		</action> 
+		<action name="viewygxxunder" class="office.pb2.action.ViewYgxxUnder">
+			<result name="success">/page/pb2/ygxx_under_list.jsp</result>
+		</action>
+		<action name="viewxpunderdetail" class="office.pb2.action.ViewXpUnderDetail">
+			<result name="success">/page/pb2/ygxx_under_detail.jsp</result>
+		</action>
+		<action name="ygxxshenpi" class="office.pb2.action.YgxxShenpi">
+			<result name="success">/page/pb2/ygxx_success.jsp</result>
+		</action>
+		<action name="updatexpstatus" class="office.pb2.action.UpdateXpStatus">
+			<result name="success">/page/pb2/ygxx_success.jsp</result>
+		</action>
+		<action name="viewygxxall" class="office.pb2.action.ViewYgxxAll">
+			<result name="success">/page/pb2/ygxx_list.jsp</result>
+		</action>
+		<action name="exportygxx" class="office.pb2.action.ExportYgxx">
+			<result name="success">/page/public/derivedetail.jsp</result>
+		</action>
+		<action name="viewygxxhz" class="office.pb2.action.ViewYgxxHz">
+			<result name="success">/page/pb2/ygxx_hz_list.jsp</result>
+		</action>
+		<action name="exportygxxhz" class="office.pb2.action.ExportYgxxHz">
+			<result name="success">/page/public/derivedetail.jsp</result>
+		</action>
+		<!-- 调班申请 -->
+		<action name="showtbsqpage" class="office.pb2.action.ShowTbsqPage">
+			<result name="success">/page/pb2/tbsq_page.jsp</result>
+		</action> 
+		<action name="getjihua" class="office.pb2.action.GetJihua">
+			<result name="success">/page/pb2/tbsq_ajax.jsp</result>
+			<result name="failededed">/page/leave/failededed.jsp</result>
+		</action> 
+		<action name="subtbsqpage" class="office.pb2.action.SubTbsqPage">
+			<result name="success">/page/pb2/tbsq_success.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action>
+		<action name="tbsqlzz" class="office.pb2.action.TbsqLzz">
+			<result name="success">/page/pb2/tbsq_lzz.jsp</result>
+		</action> 
+		<action name="viewtpdetail" class="office.pb2.action.ViewTpDetail">
+			<result name="success">/page/pb2/tbsq_detail.jsp</result>
+		</action> 
+		<action name="viewtbsqunder" class="office.pb2.action.ViewTbsqUnder">
+			<result name="success">/page/pb2/tbsq_under_list.jsp</result>
+		</action>
+		<action name="viewtpunderdetail" class="office.pb2.action.ViewTpUnderDetail">
+			<result name="success">/page/pb2/tbsq_under_detail.jsp</result>
+		</action>
+		<action name="tbsqshenpi" class="office.pb2.action.TbsqShenpi">
+			<result name="success">/page/pb2/tbsq_success.jsp</result>
+		</action>
+		<action name="updatetpstatus" class="office.pb2.action.UpdateTpStatus">
+			<result name="success">/page/pb2/tbsq_success.jsp</result>
+		</action>
+		<action name="viewtbsqall" class="office.pb2.action.ViewtbsqAll">
+			<result name="success">/page/pb2/tbsq_list.jsp</result>
+		</action>
+		<action name="exporttbsq" class="office.pb2.action.ExportTbsq">
+			<result name="success">/page/public/derivedetail.jsp</result>
+		</action>
+		<action name="processYgxxHzAll" class="office.pb2.action.ProcessYgxxHzAll">
+			<result name="success">/page/public/success.jsp</result>
+		</action>
+		<action name="viewygpw" class="office.tempxx.action.ViewYgPw">
+			<result name="success">/page/pb2/showygwork.jsp</result>
+		</action>
+		<action name="viewygunderpw" class="office.tempxx.action.ViewYgUnderPw">
+			<result name="success">/page/pb2/showygwork.jsp</result>
+		</action>
+		 <action name="showygtip" class="office.tempxx.action.ShowYgTip">
+			<result name="success">/page/pb2/ygtip_ajax.jsp</result>
+		</action>
+		
+		 <action name="backtoygxxpage" class="office.pb2.action.BackToYgxxPage">
+			<result name="success">/page/pb2/ygxx_page_tiao.jsp</result>
+		</action>
+	</package>
+</struts>    

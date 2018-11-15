@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="jbsp_default" extends="struts-default" >
+		<action name="showjbsppage" class="office.jbsp.action.ShowJbspPage">
+			<result name="success">/page/jbsp/jbsp_page.jsp</result>
+		</action>
+		<action name="subjbsppage" class="office.jbsp.action.SubJbspPage">
+			<result name="success">/page/jbsp/jbsp_sub_success.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+			<result name="nojbsp">/page/public/error.jsp</result>
+		</action>
+		<action name="viewjbsp" class="office.jbsp.action.ViewJbspLzz">
+			<result name="success">/page/jbsp/jbsp_lzz_list.jsp</result>
+		</action>
+		<action name="viewjbspunder" class="office.jbsp.action.ViewJbspUnder">
+			<result name="success">/page/jbsp/jbsp_under_list.jsp</result>
+		</action>
+		<action name="viewjbspdetail" class="office.jbsp.action.ViewJbspDetail">
+			<result name="success">/page/jbsp/jbsp_detail.jsp</result>
+		</action>
+		<action name="jbspunderdetail" class="office.jbsp.action.ViewJbspUnderDetail">
+			<result name="success">/page/jbsp/jbsp_under_detail.jsp</result>
+		</action>
+		<action name="jbspshenpi" class="office.jbsp.action.JbspShenpi">
+			<result name="success">/page/jbsp/jbsp_under_success.jsp</result>
+		</action>
+		<action name="updatejbspstatus" class="office.jbsp.action.UpdateJbspStatus">
+			<result name="success">/page/jbsp/jbsp_under_success.jsp</result>
+		</action>
+		<action name="deletejbsppage" class="office.jbsp.action.DeleteJbspPage">
+			<result name="success">/page/jbsp/jbsp_under_success.jsp</result>
+		</action>
+		<action name="viewjbspycb" class="office.jbsp.action.ViewJbspYcb">
+			<result name="success">/page/jbsp/jbsp_ycb.jsp</result>
+		</action>
+		<action name="exportjbsp" class="office.jbsp.action.ExportJbsp">
+			<result name="success">/page/public/derivedetail.jsp</result>
+		</action>
+		<action name="viewjbspall" class="office.jbsp.action.ViewJbspAll">
+			<result name="success">/page/jbsp/jbsp_all.jsp</result>
+			<result name="successtd">/page/jbsp/jbsp_alltd.jsp</result>
+		</action>
+		<action name="viewjbspsummary" class="office.jbsp.action.ViewJbspSummary">
+			<result name="success">/page/jbsp/jbsp_summary.jsp</result>
+			<result name="successtd">/page/jbsp/jbsp_summarytd.jsp</result>
+		</action>
+		<action name="exportjbspsummary" class="office.jbsp.action.ExportJbspSummary">
+			<result name="success">/page/public/derivedetail.jsp</result>
+		</action>
+		<action name="viewjbspybj" class="office.jbsp.action.ViewJbspYbj">
+			<result name="success">/page/jbsp/jbsp_ybj.jsp</result>
+		</action>
+		<action name="viewjpdall" class="office.jbsp.action.ViewJpdAll">
+			<result name="success">/page/jbsp/jbsp_txmx.jsp</result>
+		</action>
+		<action name="importjbsp" class="office.jbsp.action.ImportJbsp">
+			<result name="success">/page/pb/pbimportsuccess.jsp</result>
+		</action>
+		
+		<action name="showjbsppagedf" class="office.jbsp.action.ShowJbspPageDf">
+			<result name="success">/page/jbsp/jbsp_page_df.jsp</result>
+		</action>
+		<action name="showjbsppagedfajax" class="office.jbsp.action.ShowJbspPageDfAjax">
+			<result name="success">/page/jbsp/jbsp_page_df_ajax.jsp</result>
+			<result name="failed">/page/leave/faileded.jsp</result>
+			<result name="failededed">/page/leave/failededed.jsp</result>
+		</action>
+	</package>
+</struts>    

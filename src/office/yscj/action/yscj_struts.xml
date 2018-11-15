@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="yscj_default" extends="struts-default" >
+		<action name="showyscjpage" class="office.yscj.action.ShowYscjPage">
+			<result name="success">/page/yscj/yscj_page.jsp</result>
+		</action>
+		
+		<action name="viewleave" class="office.yscj.action.ViewLeave">
+			<result name="success">/page/yscj/viewleave.jsp</result>
+		</action>
+		<action name="saveleavenumber" class="office.yscj.action.SaveLeaveNumber">
+			<result name="success">/page/yscj/xuanzesuccess.jsp</result>
+		</action>
+		<action name="subyscjpage" class="office.yscj.action.SubYscjPage">
+			<result name="success">/page/yscj/subsuccess.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+			<result name="noyscj">/page/public/error.jsp</result>
+		</action>
+		<action name="viewyscj" class="office.yscj.action.ViewYscjLzz">
+			<result name="success">/page/yscj/yscj_lzz_list.jsp</result>
+		</action>
+		<action name="leavedetailyscj" class="office.yscj.action.LeaveDetail">
+			<result name="success">/page/yscj/showchooseleave.jsp</result>
+		</action>
+		<action name="viewleavedetailyscj" class="office.yscj.action.ViewLeaveDetail">
+			<result name="success">/page/yscj/leavedetail.jsp</result>
+		</action>
+		<action name="updateyscjstatus" class="office.yscj.action.UpdateYscjStatus">
+			<result name="success">/page/yscj/under_success.jsp</result>
+		</action>
+		<action name="deleteyscjpage" class="office.yscj.action.DeleteYscjPage">
+			<result name="success">/page/yscj/under_success.jsp</result>
+		</action>
+		<action name="viewyscjdetail" class="office.yscj.action.ViewYscjDetail">
+			<result name="success">/page/yscj/yscj_detail.jsp</result>
+		</action>
+		<action name="showyscjpagedf" class="office.yscj.action.ShowYscjPageDf">
+			<result name="success">/page/yscj/yscj_page_df.jsp</result>
+		</action>
+		<action name="showyscjpagedfajax" class="office.yscj.action.ShowYscjPageDfAjax">
+			<result name="success">/page/yscj/yscj_page_df_ajax.jsp</result>
+			<result name="failed">/page/leave/faileded.jsp</result>
+			<result name="failededed">/page/leave/failededed.jsp</result>
+		</action>
+		<action name="yscjshenpi" class="office.yscj.action.YscjShenpi">
+			<result name="success">/page/yscj/under_success.jsp</result>
+		</action>
+		<action name="viewyscjycb" class="office.yscj.action.ViewYscjYcb">
+			<result name="success">/page/yscj/yscj_ycb.jsp</result>
+		</action>
+		<action name="viewyscjybj" class="office.yscj.action.ViewYscjYbj">
+			<result name="success">/page/yscj/yscj_ybj.jsp</result>
+		</action>
+		<action name="viewyscjunder" class="office.yscj.action.ViewYscjUnder">
+			<result name="success">/page/yscj/yscj_under_list.jsp</result>
+		</action>
+		<action name="yscjunderdetail" class="office.yscj.action.ViewYscjUnderDetail">
+			<result name="success">/page/yscj/yscj_under_detail.jsp</result>
+		</action>
+		<action name="viewyscjall" class="office.yscj.action.ViewYscjAll">
+			<result name="success">/page/yscj/yscj_all.jsp</result>
+			<result name="successtd">/page/yscj/yscj_alltd.jsp</result>
+		</action>
+		<action name="exportyscj" class="office.yscj.action.ExportYscj">
+			<result name="success">/page/public/derivedetail.jsp</result>
+		</action>
+		<action name="exportyscjtz" class="office.yscj.action.ExportYscjTz">
+			<result name="success">/page/public/derivedetail.jsp</result>
+		</action>
+		<action name="yscjtzdetail" class="office.yscj.action.YscjTzDetail">
+			<result name="success">/page/yscj/yscj_taizhangunder.jsp</result>
+			<result name="successed">/page/yscj/yscj_taizhangunderreturn.jsp</result>
+		</action>
+		<action name="yscjtzbaocun" class="office.yscj.action.YscjTzBaoCun">
+			<result name="success">/page/yscj/under_success.jsp</result>
+		</action>
+		<action name="yscjtzbanjie" class="office.yscj.action.YscjTzBanJie">
+			<result name="success">/page/yscj/under_success.jsp</result>
+		</action>
+		<action name="viewyscjtz" class="office.yscj.action.ViewYscjTz">
+			<result name="success">/page/yscj/yscj_taizhang.jsp</result>
+		</action>
+		<action name="showyscjpagetj" class="office.yscj.action.ShowYscjPageTj">
+			<result name="success">/page/yscj/yscj_page_tijiao.jsp</result>
+		</action>
+		<action name="yscjisworkday" class="office.yscj.action.YscjIsWorkday">
+			<result name="success">/page/yscj/yscj_isworkday_ajax.jsp</result>
+		</action>
+		<action name="viewyscjprint" class="office.yscj.action.ViewYscjPrint">
+			<result name="success">/page/yscj/yscj_detail_print.jsp</result>
+		</action>
+		<action name="showyscjpagetjdf" class="office.yscj.action.ShowYscjPageTjDf">
+			<result name="success">/page/yscj/yscj_page_tijiao.jsp</result>
+		</action>
+	</package>
+</struts>    
