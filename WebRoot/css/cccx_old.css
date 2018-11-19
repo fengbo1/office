@@ -1,0 +1,107 @@
+body{
+	margin:0px;
+	}
+.b1,.b2,.b3,.b4,.b1b,.b2b,.b3b,.b4b,.b{display:block;overflow:hidden;}
+
+.b1,.b2,.b3,.b1b,.b2b,.b3b{height:1px;}
+
+.b2,.b3,.b4,.b2b,.b3b,.b4b,.b{border-left:1px solid #FFF;border-right:1px solid #999;}
+
+.b1,.b1b{margin:0 5px;background:#999;}
+
+.b2,.b2b{margin:0 3px;border-width:2px;}
+
+.b3,.b3b{margin:0 2px;}
+
+.b4,.b4b{height:2px;margin:0 1px;}
+
+.d1{background:#ffffff;}  /*定义 圆弧型背景的颜色*/
+
+.k {height:215px;} /*定义每个圆弧形块的高度*/
+.k2 {height:320px;}
+.k3 {height:635px;}
+.k4{height:90px}
+#zhuti {
+	padding: 0px;
+	left: 0px;
+	top: 0px;
+	width: 1415px;
+	height: auto;
+	border: 0px solid #0033FF;
+	background-color: #ffffff
+}
+#top {
+	height: 65px;
+	width: 1400px;
+	left: 17px;
+	top: 26px;
+	padding-left:10px;
+	padding-top:5px
+}
+.x_beijing{
+	margin: 0px;
+	padding: 0px;
+	width: 1415px;
+	height: 650px;
+	background-color: #0066B3;
+}
+
+/*瀵瑰垪琛ㄦ寜閽墍鍦―IV鏍囩瀹氫箟*/
+.x_anniu
+	{
+	float: left;
+	margin-top: 0px;
+	margin-left: 5px;
+	padding: 0px;
+	padding-top: 5px;
+	width: 170px;
+	height: auto;
+	text-align: center;
+	
+}
+/*璺宠浆椤甸潰鏍煎紡瀹氫箟*/
+.x_xianshi
+	{
+	float: left;
+	width: 1230px;
+	margin: 0px;
+	padding: 0px;
+	margin-top: 5px;
+	margin-left: 5px;
+	overflow-y: auto;
+	}
+iframe{padding:0px}
+#frame{
+	margin: 0px;
+	padding: 0px;
+	margin-top: 0px;
+	padding-top: 3px;
+	margin-left: 5px;
+	width: 1200px;
+	height: 629px;
+	border: ;
+	
+}
+ul{margin:0;padding:0;} 
+
+/*鏉冮檺閰嶇疆琛ㄩ〉闈㈣〃鏍兼牸寮忓畾涔*/
+.x_b_qxpz{
+	border-collapse: collapse;
+	margin: 0px;
+	padding: 0px;
+	top: 0px;
+	border: 3px solid #00F;
+}
+td,tr {
+	
+	margin:0px;
+	padding: 0px;
+}
+
+.x_gr{
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 50px;
+	padding-top: 20px;
+	padding-bottom:20px;
+}

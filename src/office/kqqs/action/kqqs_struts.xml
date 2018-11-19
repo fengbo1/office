@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="kqqs_default" extends="struts-default" >
+		<action name="showkqqspage" class="office.kqqs.action.ShowKqqsPage">
+			<result name="success">/page/kqqs/kqqs_page.jsp</result>
+			<result name="df">/page/kqqs/kqqs_page_df.jsp</result>
+		</action>
+		<action name="showkqqspagebukqjl" class="office.kqqs.action.ShowKqqsPageBuKqjl">
+			<result name="success">/page/kqqs/kqqs_bukqjl_page.jsp</result>
+		</action>
+		<action name="subkqqspage" class="office.kqqs.action.SubKqqsPage">
+			<result name="success">/page/kqqs/kqqs_sub_success.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+			<result name="nokqqs">/page/public/error.jsp</result>
+		</action>
+		<action name="viewkqqs" class="office.kqqs.action.ViewKqqsLzz">
+			<result name="success">/page/kqqs/kqqs_lzz_list.jsp</result>
+		</action>
+		<action name="viewkqqsunder" class="office.kqqs.action.ViewKqqsUnder">
+			<result name="success">/page/kqqs/kqqs_under_list.jsp</result>
+		</action>
+		<action name="viewkqqsdetail" class="office.kqqs.action.ViewKqqsDetail">
+			<result name="success">/page/kqqs/kqqs_detail.jsp</result>
+		</action>
+		<action name="kqqsunderdetail" class="office.kqqs.action.ViewKqqsUnderDetail">
+			<result name="success">/page/kqqs/kqqs_under_detail.jsp</result>
+		</action>
+		<action name="kqqsshenpi" class="office.kqqs.action.KqqsShenpi">
+			<result name="success">/page/kqqs/kqqs_under_success.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action>
+		<action name="updatekqqsstatus" class="office.kqqs.action.UpdateKqqsStatus">
+			<result name="success">/page/kqqs/kqqs_under_success.jsp</result>
+		</action>
+		<action name="viewkqqsall" class="office.kqqs.action.ViewKqqsAll">
+			<result name="success">/page/kqqs/kqqs_all.jsp</result>
+			<result name="successtd">/page/kqqs/kqqs_alltd.jsp</result>
+		</action>
+		<action name="deletekqqspage" class="office.kqqs.action.DeleteKqqsPage">
+			<result name="success">/page/kqqs/kqqs_del_success.jsp</result>
+		</action>
+		<action name="viewkqqsycb" class="office.kqqs.action.ViewKqqsYcb">
+			<result name="success">/page/kqqs/kqqs_ycb.jsp</result>
+		</action>
+		<action name="exportkqqs" class="office.kqqs.action.ExportKqqs">
+			<result name="success">/page/public/derivedetail.jsp</result>
+		</action>
+		<action name="viewkqqsybj" class="office.kqqs.action.ViewKqqsYbj">
+			<result name="success">/page/kqqs/kqqs_ybj.jsp</result>
+		</action>
+		<action name="kqqsqueren" class="office.kqqs.action.KqqsQueren">
+			<result name="success">/page/kqqs/kqqs_under_success.jsp</result>
+		</action>
+		<action name="kqqs_self_dai" class="office.kqqs.action.KqqsSelfDai">
+			<result name="success">/page/kqqs/kqqs_self_dai_ajax.jsp</result>
+		</action>
+	</package>
+</struts>    

@@ -1,0 +1,199 @@
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+    version="2.0">
+
+    <description>util</description>
+    <tlib-version>1.0</tlib-version>
+    <short-name>util</short-name>
+    <uri>http://template.fb.com/article/taglib</uri>
+	<function>
+        <description>typeToString</description>
+        <name>typetostring</name>
+		<function-class>office.util.LeaveUtil</function-class>
+		<function-signature>java.lang.String TypeToString( java.lang.Integer)</function-signature>
+    </function>
+    <function>
+        <description>NewNumberToName</description>
+        <name>newnumbertoname</name>
+		<function-class>office.util.LeaveUtil</function-class>
+		<function-signature>java.lang.String NewNumberToName( java.lang.String)</function-signature>
+    </function>
+     <function>
+        <description>NameToNewNumber</description>
+        <name>nametonewnumber</name>
+		<function-class>office.util.LeaveUtil</function-class>
+		<function-signature>java.lang.String NameToNewNumber( java.lang.String)</function-signature>
+    </function>
+    <function>
+        <description>StatusToString</description>
+        <name>statustostring</name>
+		<function-class>office.util.LeaveUtil</function-class>
+		<function-signature>java.lang.String statusToString( java.lang.Integer)</function-signature>
+    </function>
+     <function>
+        <description>AssetStatusToString</description>
+        <name>assetstatustostring</name>
+		<function-class>office.util.LeaveUtil</function-class>
+		<function-signature>java.lang.String assetstatusToString( java.lang.Integer)</function-signature>
+    </function>
+    <function>
+        <description>OpinionToString</description>
+        <name>opiniontostring</name>
+		<function-class>office.util.LeaveUtil</function-class>
+		<function-signature>java.lang.String opinionToString( java.lang.Integer)</function-signature>
+    </function>
+     <function>
+        <description>ChuToString</description>
+        <name>chutostring</name>
+		<function-class>office.util.UserUtil</function-class>
+		<function-signature>java.lang.String cToName( java.lang.Integer)</function-signature>
+    </function>
+      <function>
+        <description>ChuSToString</description>
+        <name>chustostring</name>
+		<function-class>office.util.UserUtil</function-class>
+		<function-signature>java.lang.String chuToName( java.lang.String)</function-signature>
+    </function>
+    <function>
+        <description>StatusToString</description>
+        <name>newstatustostring</name>
+		<function-class>office.util.Util</function-class>
+		<function-signature>java.lang.String statusToString( java.lang.Integer)</function-signature>
+    </function>
+    
+    <function>
+        <description>RestToString</description>
+        <name>newresttostring</name>
+		<function-class>office.util.Util</function-class>
+		<function-signature>java.lang.String restToString(java.lang.Integer)</function-signature>
+    </function>
+    
+    
+    <function>
+        <description>ApplyorBorrowToString</description>
+        <name>applyorborrowtostring</name>
+		<function-class>office.util.Util</function-class>
+		<function-signature>java.lang.String applyorborrowToString( java.lang.Integer)</function-signature>
+    </function>
+     <function>
+        <description>IsandBorrowToString</description>
+        <name>isandborrowtostring</name>
+		<function-class>office.util.Util</function-class>
+		<function-signature>java.lang.String isandborrowToString( java.lang.Integer)</function-signature>
+    </function>
+     <function>
+        <description>QdqtToString</description>
+        <name>qdqttostring</name>
+		<function-class>office.util.Util</function-class>
+		<function-signature>java.lang.String qdqtToString( java.lang.Integer)</function-signature>
+    </function>
+    <function>
+        <description>SxwToString</description>
+        <name>sxwtostring</name>
+		<function-class>office.util.Util</function-class>
+		<function-signature>java.lang.String intToSxw(java.lang.Integer)</function-signature>
+    </function>
+    <function>
+        <description>yesOrNot</description>
+        <name>yntostring</name>
+		<function-class>office.util.Util</function-class>
+		<function-signature>java.lang.String yesOrNot( java.lang.Integer)</function-signature>
+    </function>
+    <function>
+        <description>shengxiao</description>
+        <name>sxtostring</name>
+		<function-class>office.util.UassUtil</function-class>
+		<function-signature>java.lang.String yesOrNot( java.lang.Integer)</function-signature>
+    </function>
+    <function>
+        <description>simpleToStanderd</description>
+        <name>simpletostanderd</name>
+		<function-class>office.util.Util</function-class>
+		<function-signature>java.lang.String simpleToStanderd( java.lang.String)</function-signature>
+    </function>
+    <function>
+        <description>authotoname</description>
+        <name>authotoname</name>
+		<function-class>office.util.UserUtil</function-class>
+		<function-signature>java.lang.String authoToName( java.lang.String)</function-signature>
+    </function>
+    <function>
+        <description>positionToName</description>
+        <name>positiontoname</name>
+		<function-class>office.util.UserUtil</function-class>
+		<function-signature>java.lang.String positionToName( java.lang.String)</function-signature>
+    </function>
+    <function>
+        <description>lengthOfString</description>
+        <name>lengthofstring</name>
+		<function-class>office.util.Util</function-class>
+		<function-signature>int lenthOfString(java.lang.String)</function-signature>
+    </function>
+      <function>
+        <description>qdqsTypeToString</description>
+        <name>qdqstypetostring</name>
+		<function-class>office.util.Util</function-class>
+		<function-signature>java.lang.String qdqsTypeToString(java.lang.Integer)</function-signature>
+    </function>
+       <function>
+        <description>qtqsTypeToString</description>
+        <name>qtqstypetostring</name>
+		<function-class>office.util.Util</function-class>
+		<function-signature>java.lang.String qtqsTypeToString(java.lang.Integer)</function-signature>
+    </function>
+    <function>
+        <description>qdqtTypeToString</description>
+        <name>qdqttypetostring</name>
+		<function-class>office.util.Util</function-class>
+		<function-signature>java.lang.String qdqtTypeToString(java.lang.Integer,java.lang.Integer)</function-signature>
+    </function>
+    <function>
+        <description>plusFiveMinutes</description>
+        <name>plusfiveminutes</name>
+		<function-class>office.util.Util</function-class>
+		<function-signature>java.lang.String plusFiveMinutes(java.lang.String)</function-signature>
+    </function>
+    <function>
+        <description>ygxxReasonToString</description>
+        <name>ygxxreasontostring</name>
+		<function-class>office.util.Util</function-class>
+		<function-signature>java.lang.String ygxxReasonToString(java.lang.Integer)</function-signature>
+    </function>
+    <function>
+        <description>banciToString</description>
+        <name>bancitostring</name>
+		<function-class>office.util.PbUtil</function-class>
+		<function-signature>java.lang.String banciToString(java.lang.Integer)</function-signature>
+    </function>
+    <function>
+        <description>pbTypeToString</description>
+        <name>pbtypetostring</name>
+		<function-class>office.util.LeaveUtil</function-class>
+		<function-signature>java.lang.String pbTypeToString(java.lang.String,java.lang.String)</function-signature>
+    </function>
+    <function>
+        <description>faqiDai</description>
+        <name>faqidai</name>
+		<function-class>office.util.PbUtil</function-class>
+		<function-signature>java.lang.String faqiDai(java.lang.String,java.lang.String)</function-signature>
+    </function>
+     <function>
+        <description>wbtypetostring</description>
+        <name>wbtypetostring</name>
+		<function-class>office.util.PbUtil</function-class>
+		<function-signature>java.lang.String typeToString(java.lang.Integer)</function-signature>
+    </function>
+    <function>
+        <description>uassptitemtostring</description>
+        <name>uassptitemtostring</name>
+		<function-class>office.util.UassUtil</function-class>
+		<function-signature>java.lang.String uassPtItemToString(java.lang.String)</function-signature>
+    </function>
+     <function>
+        <description>WupinToString</description>
+        <name>wupintostring</name>
+		<function-class>office.util.Util</function-class>
+		<function-signature>java.lang.String wupinToString( java.lang.Integer)</function-signature>
+    </function>
+</taglib>

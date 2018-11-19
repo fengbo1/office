@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="zszm_default" extends="struts-default" >
+		<action name="showzzzmpage" class="office.zszm.action.ShowZzzmPage">
+			<result name="success">/page/zszm/zszm_page.jsp</result>
+		</action>
+		<action name="yscjdetail" class="office.zszm.action.YscjDetail">
+			<result name="success">/page/yscj/yscj_detail.jsp</result>
+		</action>
+		<action name="subzzzmpage" class="office.zszm.action.SubZzzmPage">
+			<result name="success">/page/zszm/subsuccess.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+			<result name="nozzzm">/page/public/error.jsp</result>
+		</action>
+		<action name="viewzzzm" class="office.zszm.action.ViewZzzmLzz">
+			<result name="success">/page/zszm/zszm_lzz_list.jsp</result>
+		</action>
+		<action name="updatezzzmstatus" class="office.zszm.action.UpdateZzzmStatus">
+			<result name="success">/page/zszm/under_success.jsp</result>
+		</action>
+		<action name="deletezzzmpage" class="office.zszm.action.DeleteZzzmPage">
+			<result name="success">/page/zszm/under_success.jsp</result>
+		</action>
+		<action name="viewzzzmdetail" class="office.zszm.action.ViewZzzmDetail">
+			<result name="success">/page/zszm/zszm_detail.jsp</result>
+		</action>
+		<action name="showzzzmpagedf" class="office.zszm.action.ShowZzzmPageDf">
+			<result name="success">/page/zszm/zzzm_page_df.jsp</result>
+		</action>
+		<action name="showzzzmpagedfajax" class="office.zszm.action.ShowZzzmPageDfAjax">
+			<result name="success">/page/zszm/zzzm_page_df_ajax.jsp</result>
+			<result name="failed">/page/leave/faileded.jsp</result>
+			<result name="failededed">/page/leave/failededed.jsp</result>
+		</action>
+		<action name="zzzmshenpi" class="office.zszm.action.ZzzmShenpi">
+			<result name="success">/page/zszm/under_success.jsp</result>
+		</action>
+		<action name="viewzzzmycb" class="office.zszm.action.ViewZzzmYcb">
+			<result name="success">/page/zszm/zszm_ycb.jsp</result>
+		</action>
+		<action name="viewzzzmybj" class="office.zszm.action.ViewZzzmYbj">
+			<result name="success">/page/zszm/zszm_ybj.jsp</result>
+		</action>
+		<action name="viewzzzmunder" class="office.zszm.action.ViewZzzmUnder">
+			<result name="success">/page/zszm/zszm_under_list.jsp</result>
+		</action>
+		<action name="zzzmunderdetail" class="office.zszm.action.ViewZzzmUnderDetail">
+			<result name="success">/page/zszm/zszm_under_detail.jsp</result>
+		</action>
+		<action name="viewzzzmall" class="office.zszm.action.ViewZzzmAll">
+			<result name="success">/page/zszm/zzzm_all.jsp</result>
+			<result name="successtd">/page/zszm/zzzm_alltd.jsp</result>
+		</action>
+		<action name="exportzzzm" class="office.zszm.action.ExportZzzm">
+			<result name="success">/page/public/derivedetail.jsp</result>
+		</action>
+		<action name="zzzmqueren" class="office.zszm.action.ZzzmQueren">
+			<result name="success">/page/zszm/under_success.jsp</result>
+		</action>
+		<action name="showyscjchoose" class="office.zszm.action.ShowYscjChoose">
+			<result name="success">/page/zszm/show_yscj.jsp</result>
+		</action>
+		<action name="showzzzmpagetj" class="office.zszm.action.ShowZzzmPageTj">
+			<result name="success">/page/zszm/zzzm_page_tijiao.jsp</result>
+		</action>
+	</package>
+</struts>    

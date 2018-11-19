@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.multipart.maxSize" value="100000000"/>
+	<package name="uass_default" extends="struts-default" >
+	
+		<action name="uassqueren" class="office.uass.action.UassQueren">
+			<result name="success">/page/uass/under_success.jsp</result>
+		</action>
+		<action name="importrole" class="office.uass.action.ImportRole">
+			<result name="success">/page/uass/under_success.jsp</result>
+		</action>
+	<!-- 员工用户平台申请USPT -->
+		<action name="showuassptpage" class="office.uass.action.UsptShowPage">
+			<result name="success">/page/uass/uasspt_page.jsp</result>
+		</action>
+		<action name="baocunuspt" class="office.uass.action.UsptBaocun">
+			<result name="success">/page/uass/uasspt_page.jsp</result>
+		</action>
+		<action name="subusptpage" class="office.uass.action.UsptSubPage">
+			<result name="success">/page/uass/under_success.jsp</result>
+		</action>
+		<action name="viewusptunder" class="office.uass.action.UsptViewUnder">
+			<result name="success">/page/uass/uasspt_under_list.jsp</result>
+		</action>
+		<action name="updateusptstatus" class="office.uass.action.UsptUpdateStatus">
+			<result name="success">/page/uass/under_success.jsp</result>
+		</action>
+		<action name="viewusptdetail" class="office.uass.action.UsptViewDetail">
+			<result name="success">/page/uass/uasspt_detail.jsp</result>
+		</action>
+		<action name="usptunderdetail" class="office.uass.action.UsptUnderDetail">
+			<result name="success">/page/uass/uasspt_under_detail.jsp</result>
+		</action>
+		<action name="usptshenpi" class="office.uass.action.UsptShenpi">
+			<result name="success">/page/uass/under_success.jsp</result>
+		</action>
+		<action name="usptviewlzz" class="office.uass.action.UsptViewLzz">
+			<result name="success">/page/uass/uasspt_lzz_list.jsp</result>
+		</action>
+		<action name="usptviewall" class="office.uass.action.UsptViewAll">
+			<result name="success">/page/uass/uasspt_all.jsp</result>
+		</action>
+		<action name="usptxiugai" class="office.uass.action.UsptXiugai">
+			<result name="success">/page/uass/uasspt_page.jsp</result>
+		</action>
+		
+		<!-- 员工用户COST行内用户 -->
+		<action name="uschshowpage" class="office.uass.action.UschShowPage">
+			<result name="success">/page/uass/uasschn_page.jsp</result>
+		</action>
+		<action name="uschbaocun" class="office.uass.action.UschBaocun">
+			<result name="success">/page/uass/uasschn_page.jsp</result>
+		</action>
+		<action name="uschsubpage" class="office.uass.action.UschSubPage">
+			<result name="success">/page/uass/under_success.jsp</result>
+		</action>
+		<action name="uschviewunder" class="office.uass.action.UschViewUnder">
+			<result name="success">/page/uass/uasschn_under_list.jsp</result>
+		</action>
+		<action name="uschupdatestatus" class="office.uass.action.UschUpdateStatus">
+			<result name="success">/page/uass/under_success.jsp</result>
+		</action>
+		<action name="uschviewdetail" class="office.uass.action.UschViewDetail">
+			<result name="success">/page/uass/uasschn_detail.jsp</result>
+		</action>
+		<action name="uschunderdetail" class="office.uass.action.UschUnderDetail">
+			<result name="success">/page/uass/uasschn_under_detail.jsp</result>
+		</action>
+		<action name="uschshenpi" class="office.uass.action.UschShenpi">
+			<result name="success">/page/uass/under_success.jsp</result>
+		</action>
+		<action name="uschviewlzz" class="office.uass.action.UschViewLzz">
+			<result name="success">/page/uass/uasschn_lzz_list.jsp</result>
+		</action>
+		<action name="uschviewall" class="office.uass.action.UschViewAll">
+			<result name="success">/page/uass/uasschn_all.jsp</result>
+		</action>
+		<action name="uschxiugai" class="office.uass.action.UschXiugai">
+			<result name="success">/page/uass/uasschn_page.jsp</result>
+		</action>
+		<action name="uschshowitem" class="office.uass.action.UschShowItem">
+			<result name="success">/page/uass/uasschn_showitem_ajax.jsp</result>
+		</action>
+		<action name="uschdaochu" class="office.uass.action.UschDaochu">
+			<result name="success">/page/public/derivedetail.jsp</result>
+		</action>
+		<action name="uschexport" class="office.uass.action.UschExportExcel">
+			<result name="success">/page/public/derivedetail.jsp</result>
+		</action>
+		
+		<!-- 员工用户COST外包用户 -->
+		<action name="uscwshowpage" class="office.uass.action.UscwShowPage">
+			<result name="success">/page/uass/uasscwb_page.jsp</result>
+		</action>
+		<action name="uscwsubpage" class="office.uass.action.UscwSubPage">
+			<result name="success">/page/uass/under_success.jsp</result>
+		</action>
+		<action name="uscwviewunder" class="office.uass.action.UscwViewUnder">
+			<result name="success">/page/uass/uasscwb_under_list.jsp</result>
+		</action>
+		<action name="uscwupdatestatus" class="office.uass.action.UscwUpdateStatus">
+			<result name="success">/page/uass/under_success.jsp</result>
+		</action>
+		<action name="uscwviewdetail" class="office.uass.action.UscwViewDetail">
+			<result name="success">/page/uass/uasscwb_detail.jsp</result>
+		</action>
+		<action name="uscwunderdetail" class="office.uass.action.UscwUnderDetail">
+			<result name="success">/page/uass/uasscwb_under_detail.jsp</result>
+		</action>
+		<action name="uscwshenpi" class="office.uass.action.UscwShenpi">
+			<result name="success">/page/uass/under_success.jsp</result>
+		</action>
+		<action name="uscwviewlzz" class="office.uass.action.UscwViewLzz">
+			<result name="success">/page/uass/uasscwb_lzz_list.jsp</result>
+		</action>
+		<action name="uscwviewall" class="office.uass.action.UscwViewAll">
+			<result name="success">/page/uass/uasscwb_all.jsp</result>
+		</action>
+		
+		
+		<!-- 员工用户稽核用户 -->
+		<action name="usjhshowpage" class="office.uass.action.UsjhShowPage">
+			<result name="success">/page/uass/uassjihe_page.jsp</result>
+		</action>
+		<action name="usjhsubpage" class="office.uass.action.UsjhSubPage">
+			<result name="success">/page/uass/under_success.jsp</result>
+		</action>
+		<action name="usjhviewunder" class="office.uass.action.UsjhViewUnder">
+			<result name="success">/page/uass/uassjihe_under_list.jsp</result>
+		</action>
+		<action name="usjhupdatestatus" class="office.uass.action.UsjhUpdateStatus">
+			<result name="success">/page/uass/under_success.jsp</result>
+		</action>
+		<action name="usjhviewdetail" class="office.uass.action.UsjhViewDetail">
+			<result name="success">/page/uass/uassjihe_detail.jsp</result>
+		</action>
+		<action name="usjhunderdetail" class="office.uass.action.UsjhUnderDetail">
+			<result name="success">/page/uass/uassjihe_under_detail.jsp</result>
+		</action>
+		<action name="usjhshenpi" class="office.uass.action.UsjhShenpi">
+			<result name="success">/page/uass/under_success.jsp</result>
+		</action>
+		<action name="usjhviewlzz" class="office.uass.action.UsjhViewLzz">
+			<result name="success">/page/uass/uassjihe_lzz_list.jsp</result>
+		</action>
+		<action name="usjhviewall" class="office.uass.action.UsjhViewAll">
+			<result name="success">/page/uass/uassjihe_all.jsp</result>
+		</action>
+	</package>
+</struts>    

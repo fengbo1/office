@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="wcgg_default" extends="struts-default" >
+		<action name="showwcggpage" class="office.wcgg.action.ShowWcggPage">
+			<result name="success">/page/wcgg/wcgg_page.jsp</result>
+		</action>
+		<action name="showwcggpagedf" class="office.wcgg.action.ShowWcggPageDf">
+			<result name="success">/page/wcgg/wcgg_page_df.jsp</result>
+		</action>
+		<action name="showwcggpagedfajax" class="office.wcgg.action.ShowWcggPageDfAjax">
+			<result name="success">/page/wcgg/wcgg_page_df_ajax.jsp</result>
+			<result name="failed">/page/leave/faileded.jsp</result>
+			<result name="failededed">/page/leave/failededed.jsp</result>
+		</action>
+		<action name="subwcggpage" class="office.wcgg.action.SubWcggPage">
+			<result name="success">/page/wcgg/subsuccess.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+			<result name="nowcgg">/page/public/error.jsp</result>
+		</action>
+		<action name="viewwcgg" class="office.wcgg.action.ViewWcggLzz">
+			<result name="success">/page/wcgg/wcgg_lzz_list.jsp</result>
+		</action>
+		<action name="viewwcggunder" class="office.wcgg.action.ViewWcggUnder">
+			<result name="success">/page/wcgg/wcgg_under_list.jsp</result>
+		</action>
+		<action name="viewwcggdetail" class="office.wcgg.action.ViewWcggDetail">
+			<result name="success">/page/wcgg/wcgg_detail.jsp</result>
+		</action>
+		<action name="wcggunderdetail" class="office.wcgg.action.ViewWcggUnderDetail">
+			<result name="success">/page/wcgg/wcgg_under_detail.jsp</result>
+		</action>
+		<action name="wcggshenpi" class="office.wcgg.action.WcggShenpi">
+			<result name="success">/page/wcgg/under_success.jsp</result>
+		</action>
+		<action name="updatewcggstatus" class="office.wcgg.action.UpdateWcggStatus">
+			<result name="success">/page/wcgg/under_success.jsp</result>
+		</action>
+		<action name="wcggbaodao" class="office.wcgg.action.WcggBaodaoAction">
+			<result name="success">/page/wcgg/under_success.jsp</result>
+			<result name="failed">/page/wcgg/under_success.jsp</result>
+		</action>
+		<action name="viewwcggall" class="office.wcgg.action.ViewWcggAll">
+			<result name="success">/page/wcgg/wcgg_all.jsp</result>
+			<result name="successtd">/page/wcgg/wcgg_alltd.jsp</result>
+		</action>
+		<action name="deletewcggpage" class="office.wcgg.action.DeleteWcggPage">
+			<result name="success">/page/wcgg/under_success.jsp</result>
+		</action>
+		<action name="viewwcggycb" class="office.wcgg.action.ViewWcggYcb">
+			<result name="success">/page/wcgg/wcgg_ycb.jsp</result>
+		</action>
+		<action name="exportwcgg" class="office.wcgg.action.ExportWcgg">
+			<result name="success">/page/public/derivedetail.jsp</result>
+		</action>
+		<action name="viewwcggybj" class="office.wcgg.action.ViewWcggYbj">
+			<result name="success">/page/wcgg/wcgg_ybj.jsp</result>
+		</action>
+	</package>
+</struts>    

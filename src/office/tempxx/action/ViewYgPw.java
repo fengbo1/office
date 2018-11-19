@@ -1,0 +1,329 @@
+package office.tempxx.action;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import office.tempxx.pojo.TPeoplework;
+import office.userinfo.dao.UserInfoDAO;
+import office.userinfo.pojo.UserInfo;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import ccb.hibernate.HibernateSessionFactory;
+
+public class ViewYgPw {
+	private static final Log log = LogFactory.getLog(TPeoplework.class);
+	private String newnumber;// 新一代员工编号
+	private List<TPeoplework> list;
+	private String title;
+	private String name;
+	private double day;
+	private double hour;
+	private int reason;
+	private String begindate;
+	private String enddate;
+	private String chabegindate;
+	private String chaenddate;
+	private String strtemp;
+	private String[]people;
+	private String tel;
+	private String qita;
+	private String remark;
+	private String RadioGroup1;
+	private String RadioGroup2;
+	private String peoplename;
+	private String chaname;
+	private String peoplenametiao;
+	private String isdai;
+	String zhuanname;
+	private int type;
+	private int zhuan;
+	/**
+	* 获得默认的分页大小
+	*/
+   
+	
+	public String getPeoplename() {
+		return peoplename;
+	}
+
+
+
+	public String getIsdai() {
+		return isdai;
+	}
+
+
+
+	public void setIsdai(String isdai) {
+		this.isdai = isdai;
+	}
+
+
+
+	public String getPeoplenametiao() {
+		return peoplenametiao;
+	}
+
+	public void setPeoplenametiao(String peoplenametiao) {
+		this.peoplenametiao = peoplenametiao;
+	}
+
+	public String getChabegindate() {
+		return chabegindate;
+	}
+
+	public void setChabegindate(String chabegindate) {
+		this.chabegindate = chabegindate;
+	}
+
+	public String getChaenddate() {
+		return chaenddate;
+	}
+
+	public void setChaenddate(String chaenddate) {
+		this.chaenddate = chaenddate;
+	}
+
+	public String getChaname() {
+		return chaname;
+	}
+
+	public void setChaname(String chaname) {
+		this.chaname = chaname;
+	}
+
+	public double getDay() {
+		return day;
+	}
+
+	public void setDay(double day) {
+		this.day = day;
+	}
+
+	public double getHour() {
+		return hour;
+	}
+
+	public void setHour(double hour) {
+		this.hour = hour;
+	}
+
+	public int getReason() {
+		return reason;
+	}
+
+	public void setReason(int reason) {
+		this.reason = reason;
+	}
+
+	public String getTel() {
+		return tel;
+	}
+
+	public void setTel(String tel) {
+		this.tel = tel;
+	}
+
+	public String getQita() {
+		return qita;
+	}
+
+	public void setQita(String qita) {
+		this.qita = qita;
+	}
+
+	public String getRemark() {
+		return remark;
+	}
+
+	public void setRemark(String remark) {
+		this.remark = remark;
+	}
+
+	public String getRadioGroup1() {
+		return RadioGroup1;
+	}
+
+	public void setRadioGroup1(String radioGroup1) {
+		RadioGroup1 = radioGroup1;
+	}
+
+	public String getRadioGroup2() {
+		return RadioGroup2;
+	}
+
+	public void setRadioGroup2(String radioGroup2) {
+		RadioGroup2 = radioGroup2;
+	}
+
+	public void setPeoplename(String peoplename) {
+		this.peoplename = peoplename;
+	}
+
+	public int getType() {
+		return type;
+	}
+
+	public void setType(int type) {
+		this.type = type;
+	}
+
+	public String[] getPeople() {
+		return people;
+	}
+
+	public void setPeople(String[] people) {
+		this.people = people;
+	}
+
+	public List<TPeoplework> getList() {
+		return list;
+	}
+
+	public void setList(List<TPeoplework> list) {
+		this.list = list;
+	}
+
+	public int getZhuan() {
+		return zhuan;
+	}
+
+	public void setZhuan(int zhuan) {
+		this.zhuan = zhuan;
+	}
+
+	public String getNewnumber() {
+		return newnumber;
+	}
+
+	public void setNewnumber(String newnumber) {
+		this.newnumber = newnumber;
+	}
+
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getBegindate() {
+		return begindate;
+	}
+
+	public void setBegindate(String begindate) {
+		this.begindate = begindate;
+	}
+
+	public String getEnddate() {
+		return enddate;
+	}
+
+	public void setEnddate(String enddate) {
+		this.enddate = enddate;
+	}
+
+	public String getStrtemp() {
+		return strtemp;
+	}
+
+	public void setStrtemp(String strtemp) {
+		this.strtemp = strtemp;
+	}
+
+
+	public String execute() throws Exception
+	{
+		String result = "success";
+		UserInfoDAO uidao = new UserInfoDAO();
+		UserInfo ui = new UserInfo();
+		Query query;
+		String hql = "";
+		String position = "";
+		String bd = "";
+		String ed = "";
+		String un = "";
+	    if(type==1)		
+		{
+	    peoplename = "'"+people[0]+"',";
+	    peoplenametiao = people[0];	
+		for(int i=1;i<people.length;i++)
+		{
+			peoplename=peoplename+"'"+people[i]+"',";
+			peoplenametiao=peoplenametiao+"、"+people[i];
+		}
+		peoplename = peoplename.substring(0, peoplename.length()-1);
+		}
+		//title = "统计查询-明细查询";
+		Session session = HibernateSessionFactory.getSession();
+		Transaction trans = session.beginTransaction();
+		try {
+			//ui = uidao.findByNewNumber(newnumber);
+			//position = ui.getPosition();
+			if(peoplename!=null&&zhuan==1)
+			{
+				peoplename = new String(peoplename.getBytes("ISO8859-1"),"UTF-8");
+			}
+			
+			hql = "from TPeoplework as tw where 1=1 and tw.name in ("+peoplename+")";
+			if(name!=null&&zhuan==1)
+			{
+				strtemp = new String(name.getBytes("ISO8859-1"),"UTF-8");
+			}
+			else
+			{
+				strtemp = chaname;
+			}
+			
+			if((strtemp!=null)&&(!strtemp.equals(""))&&(type!=1))
+			{	
+				hql +=" and tw.name = '"+strtemp+"'";
+			}
+			if(begindate!=null&&!begindate.equals("")&&enddate!=null&&!enddate.equals(""))
+			{
+				bd = begindate.replace("-","");
+				ed = enddate.replace("-", "");
+				hql += " and tw.date>='"+bd+"' and tw.date<='"+ed+"'";
+			}
+			if(chabegindate!=null&&!chabegindate.equals("")&&chaenddate!=null&&!chaenddate.equals(""))
+			{
+				bd = chabegindate.replace("-","");
+				ed = chaenddate.replace("-", "");
+				hql += " and tw.date>='"+bd+"' and tw.date<='"+ed+"'";
+			}
+		
+			
+			hql += " order by tw.id";
+			System.out.println(hql);
+			query = session.createQuery(hql);
+			list = query.list();
+			type=0;
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}finally{
+			trans.commit();
+			session.flush();
+			session.clear();
+			session.close();
+		}
+		
+		return result;
+	}
+	
+	
+}

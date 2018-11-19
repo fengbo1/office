@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="kqjl_default" extends="struts-default" >
+		<action name="importkqjl" class="office.kqjl.action.ImportKqjl">
+			<result name="success">/page/public/success.jsp</result>
+		</action>
+		<action name="kqjlzw" class="office.kqjl.action.ViewKqjlZw">
+			<result name="success">/page/kqjl/kqjl_zw.jsp</result>
+		</action>
+		<action name="kqjldaily" class="office.kqjl.action.ViewKqjlDaily">
+			<result name="success">/page/kqjl/kqjl_daily.jsp</result>
+		</action>
+		<action name="kqjlgrdaily" class="office.kqjl.action.ViewKqjlGrDaily">
+			<result name="success">/page/kqjl/kqjl_gr_daily.jsp</result>
+		</action>
+		<action name="kqjlycdaily" class="office.kqjl.action.ViewKqjlYcDaily">
+			<result name="success">/page/kqjl/kqjl_yc_daily.jsp</result>
+		</action>
+		<action name="kqjlhzb" class="office.kqjl.action.ViewKqjlHzb">
+			<result name="success">/page/kqjl/kqjl_hzb.jsp</result>
+		</action>
+		<action name="kqjlmonth" class="office.kqjl.action.ViewKqjlMonth">
+			<result name="success">/page/kqjl/kqjl_month.jsp</result>
+		</action>
+		<action name="processkqjldaily" class="office.kqjl.action.ProcessKqjlDaily">
+			<result name="success">/page/public/success.jsp</result>
+		</action>
+		<action name="processkqjlmonth" class="office.kqjl.action.ProcessKqjlMonth">
+			<result name="success">/page/public/successnoreturn.jsp</result>
+		</action>
+		<action name="updatekqjlmonth" class="office.kqjl.action.UpdateKqjlMonth">
+			<result name="success">/page/public/success.jsp</result>
+		</action>
+		<action name="showkqjlimport" class="office.kqjl.action.ShowKqjlImport">
+			<result name="success">/page/kqjl/importkqjl.jsp</result>
+		</action>
+		<action name="importxiaxian" class="office.kqjl.action.ImportXiaXian">
+			<result name="success">/page/kqjl/importsuccess.jsp</result>
+		</action>
+		<action name="tichuyy" class="office.kqjl.action.TichuYY">
+			<result name="success">/page/public/success.jsp</result>
+		</action>
+		<action name="deletekq" class="office.kqjl.action.DeleteKQ">
+			<result name="success">/page/public/success.jsp</result>
+		</action>
+		<action name="qrdelete" class="office.kqjl.action.DeleteQR">
+			<result name="success">/page/public/success.jsp</result>
+		</action>
+		<action name="chuliyc" class="office.kqjl.action.ChuliMonthYC">
+			<result name="success">/page/kqjl/chulimonthyc.jsp</result>
+			<result name="month">/page/kqjl/monthgrmx.jsp</result>
+		</action>
+		<action name="kqqsdis" class="office.kqjl.action.KqqsDis">
+			<result name="success">/page/public/success.jsp</result>
+		</action>
+		<action name="exportkqjldaily" class="office.kqjl.action.ExportKqjlDaily">
+			<result name="success">/page/public/derivedetail.jsp</result>
+		</action>
+		<action name="exportkqjlgrdaily" class="office.kqjl.action.ExportKqjlGrDaily">
+			<result name="success">/page/public/derivedetail.jsp</result>
+		</action>
+		<action name="exportkqjlmonth" class="office.kqjl.action.ExportKqjlMonthForZuzhang">
+			<result name="success">/page/public/derivedetail.jsp</result>
+		</action>
+		<action name="exportkqjlmonthhz" class="office.kqjl.action.ExportKqjlMonth">
+			<result name="success">/page/public/derivedetail.jsp</result>
+		</action>
+	</package>
+</struts>    

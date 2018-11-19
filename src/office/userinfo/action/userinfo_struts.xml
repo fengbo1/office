@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="user_default" extends="struts-default" >
+		<action name="user" class="office.userinfo.action.UserAction">
+			<result name="find_all_success">/page/userinfo/list.jsp</result>
+			<result name="add_success">/page/public/success.jsp</result>
+			<result name="delete_success">/page/public/success.jsp</result>
+			<result name="to_update_success">/page/userinfo/modify.jsp</result>
+		</action>
+		<action name="login" class="office.userinfo.action.UserLogin">
+			<result name="success">/page/office.jsp</result>
+			<result name="false">/index2.jsp</result>
+		</action>
+		<action name="mainlogin" class="office.userinfo.action.LoginMain">
+			<result name="success">/mainccb.jsp</result>
+			<result name="false">/index2.jsp</result>
+		</action>
+		<action name="logout" class="office.userinfo.action.UserLogout">
+			<result name="success">/index1.jsp</result>
+		</action>
+		<action name="userModify" class="office.userinfo.action.UserModify">
+			<result name="success">/page/userinfo/modifysuccess.jsp</result>
+			<result name="false">/page/userinfo/modify.jsp</result>
+		</action>
+		<action name="userlist" class="office.userinfo.action.UserList">
+			<result name="success">/page/userinfo/list.jsp</result>
+		</action>
+		<action name="userdel" class="office.userinfo.action.UserDel">
+			<result name="success">/page/public/success.jsp</result>
+		</action>
+		<action name="usertoupdate" class="office.userinfo.action.UserToUpdate">
+			<result name="success">/page/userinfo/usertoupdate.jsp</result>
+		</action>
+		<action name="userupdate" class="office.userinfo.action.UserUpdate">
+			<result name="success">/page/userinfo/updatesuccess.jsp</result>
+			<result name="error">/page/public/error.jsp</result>
+		</action>
+		<action name="useradd" class="office.userinfo.action.UserAdd">
+			<result name="success">/page/userinfo/updatesuccess.jsp</result>
+			<result name="error">/page/public/error.jsp</result>
+		</action>
+		<action name="importuserinfo" class="office.userinfo.action.ImportYgxx">
+			<result name="success">/page/public/success.jsp</result>
+			<result name="error">/page/public/error.jsp</result>
+		</action>
+		<action name="userset" class="office.userinfo.action.UserSet">
+			<result name="success">/page/public/success.jsp</result>
+			<result name="error">/page/public/error.jsp</result>
+		</action>
+		<action name="exportuserinfo" class="office.userinfo.action.ExportUserinfo">
+			<result name="success">/page/public/derivedetail.jsp</result>
+		</action>
+		<action name="showuserset" class="office.userinfo.action.ShowUserSet">
+			<result name="success">/page/userinfo/userset.jsp</result>
+		</action>
+		<action name="testa" class="office.config.action.Test">
+			<result name="success">/page/public/success.jsp</result>
+		</action>
+		<action name="tishi" class="office.userinfo.action.TiShi">
+			<result name="success">/page/public/ajaxreturn.jsp</result>
+		</action>  
+	</package>
+</struts>    

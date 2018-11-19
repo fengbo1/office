@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="mjgl_default" extends="struts-default" >
+		<action name="showmjglpage" class="office.mjgl.action.ShowMjglPage">
+			<result name="success">/page/mjgl/mjgl_page.jsp</result>
+		</action>
+		<action name="submjglpage" class="office.mjgl.action.SubMjglPage">
+			<result name="success">/page/mjgl/subsuccess.jsp</result>
+			<result name="failed">/page/mjgl/mjgl_error.jsp</result>
+			<result name="nomjgl">/page/public/error.jsp</result>
+		</action>
+		<action name="importmjglpage" class="office.mjgl.action.ImportMjglPage">
+			<result name="success">/page/public/success.jsp</result>
+		</action>
+		<action name="mjglajax" class="office.mjgl.action.MjglAjax">
+			<result name="success">/page/mjgl/mjgl_page_df_ajax.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action>
+		<action name="mjglnew" class="office.mjgl.action.MjglNew">
+			<result name="success">/page/mjgl/mjgl_page_ajax_null.jsp</result>
+		</action>
+		<action name="viewmjgllzz" class="office.mjgl.action.ViewMjglLzz">
+			<result name="success">/page/mjgl/mjgl_lzz_list.jsp</result>
+		</action>
+		<action name="updatemjglstatus" class="office.mjgl.action.UpdateMjglStatus">
+			<result name="success">/page/mjgl/under_success.jsp</result>
+		</action>
+		<action name="deletemjglpage" class="office.mjgl.action.DeleteMjglPage">
+			<result name="success">/page/mjgl/under_success.jsp</result>
+		</action>
+		<action name="viewmjgldetail" class="office.mjgl.action.ViewMjglDetail">
+			<result name="success">/page/mjgl/mjgl_detail.jsp</result>
+		</action>
+		
+		<action name="mjglshenpi" class="office.mjgl.action.MjglShenpi">
+			<result name="success">/page/mjgl/under_success.jsp</result>
+		</action>
+		<action name="viewmjglycb" class="office.mjgl.action.ViewMjglYcb">
+			<result name="success">/page/mjgl/mjgl_ycb.jsp</result>
+		</action>
+		<action name="viewmjglybj" class="office.mjgl.action.ViewMjglYbj">
+			<result name="success">/page/mjgl/mjgl_ybj.jsp</result>
+		</action>
+		<action name="viewmjglunder" class="office.mjgl.action.ViewMjglUnder">
+			<result name="success">/page/mjgl/mjgl_under_list.jsp</result>
+		</action>
+		<action name="viewmjglunderdetail" class="office.mjgl.action.ViewMjglUnderDetail">
+			<result name="success">/page/mjgl/mjgl_under_detail.jsp</result>
+		</action>
+		<action name="viewmjglall" class="office.mjgl.action.ViewMjglAll">
+			<result name="success">/page/mjgl/mjgl_all.jsp</result>
+			<result name="successtd">/page/mjgl/mjgl_alltd.jsp</result>
+		</action>
+		<action name="exportmjglpage" class="office.mjgl.action.ExportMjglPage">
+			<result name="success">/page/public/derivedetail.jsp</result>
+		</action>
+		<action name="showmjglimport" class="office.mjgl.action.ShowMjglImport">
+			<result name="success">/page/mjgl/mjgl_qxdr.jsp</result>
+		</action>
+		<action name="viewmjglpage" class="office.mjgl.action.ViewMjglPage">
+			<result name="success">/page/mjgl/mjgl_qxcx.jsp</result>
+		</action>
+		<action name="mjglqueren" class="office.mjgl.action.MjglQueren">
+			<result name="success">/page/mjgl/under_success.jsp</result>
+		</action>
+		<action name="mjglselfqueren" class="office.mjgl.action.MjglSelfQueren">
+			<result name="success">/page/mjgl/under_success.jsp</result>
+		</action>
+	</package>
+</struts>    

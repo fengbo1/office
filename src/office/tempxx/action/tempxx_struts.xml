@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="tempxx_default" extends="struts-default" >
+		<action name="importpw" class="office.tempxx.action.ImportPw">
+			<result name="success">/page/public/success.jsp</result>
+		</action>
+		<action name="exporttempxx" class="office.tempxx.action.ExportTempxx">
+			<result name="success">/page/public/derivedetail.jsp</result>
+		</action>
+		<action name="updatetempxx" class="office.tempxx.action.UpdateTempXx">
+			<result name="success">/page/pb/pbimport.jsp</result>
+		</action>
+	</package>
+</struts>    

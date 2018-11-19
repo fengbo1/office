@@ -1,0 +1,56 @@
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<welcome-file-list>
+		<welcome-file>index2.jsp</welcome-file>
+	</welcome-file-list>
+	<jsp-config>
+		<taglib>
+			<taglib-uri>http://template.fb.com/article/taglib</taglib-uri>
+			<taglib-location>/WEB-INF/util.tld</taglib-location>
+		</taglib>
+	</jsp-config>
+	<filter>
+		<!-- Filter 的名字 -->
+		<filter-name>authority</filter-name>
+		<!-- Filter 的实现类 -->
+		<filter-class>office.filter.AuthorityFilter</filter-class>
+	</filter>
+	<!-- 定义Filter 拦截地址 -->
+	<filter-mapping>
+		<!-- Filter 的名字 -->
+		<filter-name>authority</filter-name>
+		<!-- Filter 负责拦截的URL -->
+		<url-pattern>/page/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<!-- Filter 的名字 -->
+		<filter-name>authority</filter-name>
+		<!-- Filter 负责拦截的URL -->
+		<url-pattern>*.action</url-pattern>
+	</filter-mapping>
+	<filter>
+		<filter-name>struts2</filter-name>
+		<filter-class>org.apache.struts2.dispatcher.FilterDispatcher</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>struts2</filter-name>
+		<url-pattern>*.jsp</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>struts2</filter-name>
+		<url-pattern>*.action</url-pattern>
+	</filter-mapping>
+	<session-config>
+		<session-timeout>1440</session-timeout>
+	</session-config>
+	<!-- 调班申请，超时退回，暂时不用
+	<servlet>  
+    	<servlet-name>init</servlet-name>  
+    	<servlet-class>office.welcome.InitAction</servlet-class>  
+   		 <load-on-startup>3</load-on-startup>
+	</servlet>
+	 -->
+</web-app>
